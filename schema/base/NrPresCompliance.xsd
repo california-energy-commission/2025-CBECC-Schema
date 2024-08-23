@@ -7,7 +7,7 @@
    xmlns:com="http://www.lmonte.com/besm/com"
    xmlns:dtyp="http://www.lmonte.com/besm/dtyp"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-   elementFormDefault="qualified" attributeFormDefault="unqualified" version="2022.0.000">
+   elementFormDefault="qualified" attributeFormDefault="unqualified" version="2025.0.000">
    <xsd:import namespace="http://www.lmonte.com/besm/com" schemaLocation="NrPresCommon.xsd"/>
    <xsd:import namespace="http://www.lmonte.com/besm/bld" schemaLocation="NrPresBuilding.xsd"/>
    <xsd:import namespace="http://www.lmonte.com/besm/dtyp" schemaLocation="DataTypes.xsd"/>
@@ -14487,6 +14487,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
             <dtyp:displayterm value="2016">2016</dtyp:displayterm>
             <dtyp:displayterm value="2019">2019</dtyp:displayterm>
             <dtyp:displayterm value="2022">2022</dtyp:displayterm>
+            <dtyp:displayterm value="2025">2025</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
       <xsd:restriction base="dtyp:EnumerationYear">
@@ -14494,6 +14495,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
          <xsd:enumeration value="2016"/>
          <xsd:enumeration value="2019"/>
          <xsd:enumeration value="2022"/>
+         <xsd:enumeration value="2025"/>
       </xsd:restriction>
    </xsd:simpleType>
    <xsd:simpleType name="TailoredFixtureType">
@@ -14894,6 +14896,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
             <dtyp:displayterm value="Compliance2017">Compliance 2017</dtyp:displayterm>
             <dtyp:displayterm value="Compliance2019">Compliance 2019</dtyp:displayterm>
             <dtyp:displayterm value="Compliance2022">Compliance 2022</dtyp:displayterm>
+            <dtyp:displayterm value="Compliance2025">Compliance 2025</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
       <xsd:restriction base="dtyp:EnumerationConstant">
@@ -14904,6 +14907,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
          <xsd:enumeration value="Compliance2017"/>
          <xsd:enumeration value="Compliance2019"/>
          <xsd:enumeration value="Compliance2022"/>
+         <xsd:enumeration value="Compliance2025"/>
       </xsd:restriction>
    </xsd:simpleType>
    <xsd:simpleType name="TotalContinuousAirflow">
