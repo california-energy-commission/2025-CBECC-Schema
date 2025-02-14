@@ -1,8 +1,6 @@
-# 2025 CBECC-Com-Schema
+# 2025 CBECC-Schema
 
-[![Remote Dispatch Action Dispatcher](https://github.com/NORESCO/2025-CBECC-Com-Schema/actions/workflows/dispatch.yml/badge.svg)](https://github.com/NORESCO/2025-CBECC-Com-Schema/actions/workflows/actions.yml)
-
-Nonresidential PRF01
+[![Remote Dispatch Action Dispatcher](https://github.com/NORESCO/2025-CBECC-Schema/actions/workflows/dispatch.yml/badge.svg)](https://github.com/NORESCO/2025-CBECC-Schema/actions/workflows/actions.yml)
 
 # Folder Structure
 
