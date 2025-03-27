@@ -2811,6 +2811,7 @@
             <dtyp:displayterm value="DifferentialDryBulbAndEnthalpy">Differential DB &amp; Enthalpy</dtyp:displayterm>
             <dtyp:displayterm value="DifferentialEnthalpy">Differential Enthalpy</dtyp:displayterm>
             <dtyp:displayterm value="FixedDryBulb">Fixed DB</dtyp:displayterm>
+            <dtyp:displayterm value="PumpedRefrigerantEconomizer">Pumped Refrigerant Economizer</dtyp:displayterm>
             <dtyp:displayterm value="NoEconomizer">No Economizer</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -2819,6 +2820,7 @@
          <xsd:enumeration value="DifferentialDryBulbAndEnthalpy"/>
          <xsd:enumeration value="DifferentialEnthalpy"/>
          <xsd:enumeration value="FixedDryBulb"/>
+         <xsd:enumeration value="PumpedRefrigerantEconomizer"/>
          <xsd:enumeration value="NoEconomizer"/>
       </xsd:restriction>
    </xsd:simpleType>
@@ -3100,6 +3102,16 @@
       <xsd:restriction base="dtyp:DecimalNonnegative">
       </xsd:restriction>
    </xsd:simpleType>
+   <xsd:simpleType name="EfficiencyNSenCOP">
+      <xsd:annotation>
+         <xsd:documentation>  Units: none</xsd:documentation>
+         <xsd:appinfo source="displaytermType">
+            <dtyp:displayterm>Efficiency NSense COP</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:DecimalNonnegative">
+      </xsd:restriction>
+   </xsd:simpleType>
    <xsd:simpleType name="EfficiencySCOP">
       <xsd:annotation>
          <xsd:documentation>  Units: none</xsd:documentation>
@@ -3184,6 +3196,7 @@
             <dtyp:displayterm value="KWperTon">kWperTon</dtyp:displayterm>
             <dtyp:displayterm value="KWperTon_IPLV">IPLV</dtyp:displayterm>
             <dtyp:displayterm value="NEEA">NEEA Rated</dtyp:displayterm>
+            <dtyp:displayterm value="NSenCOP">NSenCOP</dtyp:displayterm>
             <dtyp:displayterm value="SCOP">SCOP</dtyp:displayterm>
             <dtyp:displayterm value="SEER">SEER</dtyp:displayterm>
             <dtyp:displayterm value="SEER2">SEER2</dtyp:displayterm>
@@ -3222,6 +3235,7 @@
          <xsd:enumeration value="KWperTon"/>
          <xsd:enumeration value="KWperTon_IPLV"/>
          <xsd:enumeration value="NEEA"/>
+         <xsd:enumeration value="NSenCOP"/> 
          <xsd:enumeration value="SCOP"/>
          <xsd:enumeration value="SEER"/>
          <xsd:enumeration value="SEER2"/>

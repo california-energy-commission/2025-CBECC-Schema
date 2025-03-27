@@ -7782,6 +7782,8 @@ Proj:Bldg:Story;Spc:ExtWall:Win:LeftFinDepth GT 0</dtyp:termConditions>
                                              <xsd:restriction base="hvac:EfficiencyType">
                                                 <xsd:enumeration value="EER"/>
                                                 <xsd:enumeration value="EER2"/>
+                                                <xsd:enumeration value="IEER"/>
+                                                <xsd:enumeration value="NSenCOP"/>
                                                 <xsd:enumeration value="SEER"/>
                                                 <xsd:enumeration value="SEER2"/>
                                              </xsd:restriction>
@@ -7800,6 +7802,22 @@ Proj:Bldg:Story;Spc:ExtWall:Win:LeftFinDepth GT 0</dtyp:termConditions>
                                        <xsd:complexType>
                                           <xsd:choice>
                                              <xsd:element name="HvacDry08b_EfficiencyEER" type="hvac:EfficiencyEER">
+                                                <xsd:annotation>
+                                                   <xsd:documentation source="FieldText">Efficiency</xsd:documentation>
+                                                   <xsd:appinfo source="CBECCnrXML">
+                                                      <dtyp:CBECCnrXMLterm>AirSys:ClgEffRpt Or ZnSys:ClgEffRpt Or VRFSys:ClgEffRpt</dtyp:CBECCnrXMLterm>
+                                                   </xsd:appinfo>
+                                                </xsd:annotation>
+                                             </xsd:element>
+                                             <xsd:element name="HvacDry08b_EfficiencyIEER" type="hvac:EfficiencyIEER">
+                                                <xsd:annotation>
+                                                   <xsd:documentation source="FieldText">Efficiency</xsd:documentation>
+                                                   <xsd:appinfo source="CBECCnrXML">
+                                                      <dtyp:CBECCnrXMLterm>AirSys:ClgEffRpt Or ZnSys:ClgEffRpt Or VRFSys:ClgEffRpt</dtyp:CBECCnrXMLterm>
+                                                   </xsd:appinfo>
+                                                </xsd:annotation>
+                                             </xsd:element>
+                                             <xsd:element name="HvacDry08b_EfficiencyNSenCOP" type="hvac:EfficiencyNSenCOP">
                                                 <xsd:annotation>
                                                    <xsd:documentation source="FieldText">Efficiency</xsd:documentation>
                                                    <xsd:appinfo source="CBECCnrXML">
@@ -7903,7 +7921,7 @@ Proj:Bldg:Story;Spc:ExtWall:Win:LeftFinDepth GT 0</dtyp:termConditions>
             </xsd:annotation>
             <xsd:complexType>
                <xsd:sequence>
-                  <xsd:element name="TableHvacdwell">
+                  <xsd:element name="TableHvacdwell" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"/>
                      </xsd:annotation>
@@ -9656,7 +9674,7 @@ result = NotApplicable</xsd:documentation>
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
-         <xsd:element name="Section_Distmf" minOccurs="1">
+         <xsd:element name="Section_Distmf" minOccurs="0">
             <xsd:annotation>
                <xsd:documentation source="FieldText">
                   <d:b> H4. MULTIFAMILY HVAC DISTRIBUTION </d:b>
