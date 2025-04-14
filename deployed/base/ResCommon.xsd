@@ -2833,8 +2833,7 @@ NOTE: For roofs, differentiate between the initial Solar Reflectance value and t
             <dtyp:displayterm value="Healthcare">Healthcare</dtyp:displayterm>
             <dtyp:displayterm value="HighRiseResidential">High-Rise Residential</dtyp:displayterm>
             <dtyp:displayterm value="HotelMotel">Hotel/Motel</dtyp:displayterm>
-            <dtyp:displayterm value="LowRiseResidential">Multifamily 
-               <d:lte/>3 stories</dtyp:displayterm>
+            <dtyp:displayterm value="LowRiseResidential">Multifamily 3 stories or less</dtyp:displayterm>
             <dtyp:displayterm value="MixedOccupancy">Mixed Occupancy</dtyp:displayterm>
             <dtyp:displayterm value="Nonresidential">Nonresidential</dtyp:displayterm>
             <dtyp:displayterm value="OtherOccupancy">Other</dtyp:displayterm>

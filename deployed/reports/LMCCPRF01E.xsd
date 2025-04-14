@@ -604,7 +604,8 @@
                   </xsd:element>
                   <xsd:element name="C22Result1Col1to2Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Time Dependent Valuation (TDV)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Long-term System Cost (LSC)<d:sup>1</d:sup>
+                        </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result1Col3Heading" minOccurs="0">
@@ -614,17 +615,17 @@
                   </xsd:element>
                   <xsd:element name="C22Result1Col1Subheading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Efficiency<d:sup>1</d:sup> (kBtu/ft<d:sup>2</d:sup> - yr)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Efficiency<d:sup>2</d:sup> ($/ft<d:sup>2</d:sup>-yr)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result1Col2Subheading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Total<d:sup>2</d:sup> (kBtu/ft<d:sup>2</d:sup> - yr)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Total<d:sup>3</d:sup> ($/ft<d:sup>2</d:sup>-yr)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result1Col3Subheading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Total<d:sup>2</d:sup> (kBtu/ft<d:sup>2</d:sup> - yr)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Total<d:sup>3</d:sup> (kBtu/ft<d:sup>2</d:sup>-yr)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result1Row1Subheading" minOccurs="0">
@@ -771,7 +772,7 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"/>
                         <xsd:documentation source="AdditionalRequirements">
-                           <d:i><d:sup>1</d:sup> Efficiency measures include improvements like a better building envelope and more efficient equipment</d:i>
+                           <d:i><d:sup>1</d:sup> Long-term System Cost (LSC) is a 30-year present value cost to California's energy system. LSC is not a predicted utility bill.</d:i>
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
@@ -779,7 +780,7 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"/>
                         <xsd:documentation source="AdditionalRequirements">
-                           <d:i><d:sup>2</d:sup> Compliance Totals include efficiency, photovoltaics and batteries</d:i>
+                           <d:i><d:sup>2</d:sup> Efficiency measures include energy efficiency improvements such as better building envelope and more efficient mechanical equipment</d:i>
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
@@ -787,8 +788,17 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"/>
                         <xsd:documentation source="AdditionalRequirements">
-                           <d:i><d:sup>3</d:sup> New Construction, Complete Addition Scope: Building complies when all efficiency and total compliance margins are greater than or equal to zero and unmet load hour limits are not exceeded 
-                              <d:line1/>  Existing, Addition and Alteration Scope: Building complies when efficiency compliance margin is greater than or equal to zero and unmet load hour limits are not exceeded </d:i>
+                           <d:i><d:sup>3</d:sup> Compliance Totals include the sum of efficiency measures, solar photovoltaic (PV) measures and battery storage measures</d:i>
+                        </xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="C22Result1EndNote" minOccurs="0">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText"/>
+                        <xsd:documentation source="AdditionalRequirements">
+                           <d:i><d:sup>*</d:sup> New Construction: Building complies when Proposed Design is equal to or less than Standard Design in all three compliance categories and unmet load hour limits are not exceeded. 
+
+                              <d:line1/> Complete Addition Scope and Existing, Addition and Alteration Scope: Building complies when efficiency compliance margin is greater than or equal to zero and unmet load hour limits are not exceeded. </d:i>
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
@@ -798,7 +808,7 @@
          <xsd:element name="Section_C22Result2" minOccurs="1">
             <xsd:annotation>
                <xsd:documentation source="FieldText">
-                  <d:b>C2. TDV ENERGY COMPLIANCE RESULTS FOR PERFORMANCE COMPONENTS (Annual TDV Energy Use,  kBtu/ft<d:sup>2</d:sup> - yr) </d:b>
+                  <d:b>C2. LSC ENERGY COMPLIANCE RESULTS FOR PERFORMANCE COMPONENTS (Annual LSC Energy Use,  $/ft<d:sup>2</d:sup>-yr) </d:b>
                </xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
@@ -824,17 +834,17 @@
                   </xsd:element>
                   <xsd:element name="C22Result2Col1Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Standard Design (TDV)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Standard Design (LSC)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result2Col2Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Proposed Design (TDV)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Proposed Design (LSC)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result2Col3Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Compliance Margin (TDV)<d:sup>1</d:sup>
+                        <xsd:documentation source="FieldText">Compliance Margin (LSC)<d:sup>1</d:sup>
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
@@ -1489,7 +1499,7 @@
          <xsd:element name="Section_C22Result3" minOccurs="0">
             <xsd:annotation>
                <xsd:documentation source="FieldText">
-                  <d:b>C3. TDV ENERGY RESULTS FOR NON-REGULATED COMPONENTS<d:sup>1</d:sup>
+                  <d:b>C3. LSC ENERGY RESULTS FOR NON-REGULATED COMPONENTS<d:sup>1</d:sup>
                   </d:b>
                </xsd:documentation>
                <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
@@ -1503,17 +1513,17 @@
                   </xsd:element>
                   <xsd:element name="C22Result3Col1Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Standard Design (TDV)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Standard Design (LSC)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result3Col2Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Proposed Design (TDV)</xsd:documentation>
+                        <xsd:documentation source="FieldText">Proposed Design (LSC)</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result3Col3Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Compliance Margin (TDV)<d:sup>1</d:sup>
+                        <xsd:documentation source="FieldText">Compliance Margin (LSC)<d:sup>1</d:sup>
                         </xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
