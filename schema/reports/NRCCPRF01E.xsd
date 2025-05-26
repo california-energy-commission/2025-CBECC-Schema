@@ -551,9 +551,9 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
                         <xsd:appinfo source="displayterm">
-                           <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]3[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]3[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]3[/d:sup]</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]*[/d:sup]</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]*[/d:sup]</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]*[/d:sup]</dtyp:displayterm>
                         </xsd:appinfo>                        
                      </xsd:annotation>
                   </xsd:element>
@@ -743,7 +743,7 @@
                   <xsd:element name="C22Result1EndNote3" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Compliance Totals include the sum of efficiency measures, solar photovoltaic (PV) measures and battery storage measures[/d:i]</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Totals include the sum of efficiency measures, solar photovoltaic (PV) measures and battery storage measures[/d:i]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result1EndNote" minOccurs="0">
@@ -767,10 +767,9 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
                         <xsd:appinfo source="displayterm">
-                           <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]2[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]2[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]2[/d:sup]
-</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfComplies">COMPLIES</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY </dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH </dtyp:displayterm>
                         </xsd:appinfo>
                         
                      </xsd:annotation>
@@ -1461,7 +1460,7 @@
                   </xsd:element>
                   <xsd:element name="C22Result3Col3Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Compliance Margin (LSC)[d:sup]1[/d:sup]</xsd:documentation>
+                        <xsd:documentation source="FieldText">Compliance Margin (LSC)[d:sup]2[/d:sup]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result3Recpt" minOccurs="0">
@@ -1719,6 +1718,11 @@
                         <xsd:documentation source="FieldText">[d:i][d:sup]1[/d:sup] Notes: This table is not used for Energy Code Compliance. [/d:i]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
+                  <xsd:element name="C22Result3Footnote2" minOccurs="0">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">[d:i][d:sup]2[/d:sup] Notes: This number in parenthesis following the Compliance Margin in column 4, represents the Percent Better than Standard. [/d:i]</xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
@@ -1733,10 +1737,9 @@
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
                         <xsd:appinfo source="displayterm">
-                           <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]2[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]2[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]2[/d:sup]
-</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfComplies">COMPLIES</dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY </dtyp:displayterm>
+                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH</dtyp:displayterm>
                         </xsd:appinfo>
                         
                      </xsd:annotation>
@@ -2399,7 +2402,7 @@
                   </xsd:element>
                   <xsd:element name="C22Result5Col3Heading" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Compliance Margin (SOURCE)[d:sup]1[/d:sup]</xsd:documentation>
+                        <xsd:documentation source="FieldText">Compliance Margin (SOURCE)[d:sup]2[/d:sup]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="C22Result5Recpt" minOccurs="0">
@@ -2655,6 +2658,11 @@
                   <xsd:element name="C22Result5Footnote1" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText">[d:i][d:sup]1[/d:sup] Notes: This table is not used for Energy Code Compliance. [/d:i]</xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="C22Result5Footnote2" minOccurs="0">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">[d:i][d:sup]2[/d:sup] Notes: This number in parenthesis following the Compliance Margin in column 4, represents the Percent Better than Standard. [/d:i]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                </xsd:sequence>
@@ -4779,7 +4787,7 @@ sum (p:Proj:Bldg:ThrmlZn:HasNoClg) GT 0
          </xsd:element>
          <xsd:element name="Section_HersSum" minOccurs="1">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">E1. HERS VERIFICATION SUMMARY</xsd:documentation>
+               <xsd:documentation source="FieldText">E1. VERIFICATION SUMMARY</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
@@ -4787,7 +4795,7 @@ sum (p:Proj:Bldg:ThrmlZn:HasNoClg) GT 0
                   <xsd:element name="Hers_beginNote1" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText">Begin Note 1</xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">The following is a summary of the  features that must be field-verified by a certified HERS Rater as a condition for meeting the modeled energy performance for this computer analysis.  Additional detail is provided in the building tables below.  Registered LMCIs and LMCVs are required to be completed in the HERS Registry.</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">The following is a summary of the  features that must be field-verified by a certified ECC Rater as a condition for meeting the modeled energy performance for this computer analysis.  Additional detail is provided in the building tables below.  Registered LMCIs and LMCVs are required to be completed in the ECC Registry.</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="HersBuildingLabel" minOccurs="0">
@@ -4950,7 +4958,7 @@ sum (p:Proj:Bldg:ThrmlZn:HasNoClg) GT 0
          </xsd:element>
          <xsd:element name="Section_HersExc" minOccurs="0">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]E3. HERS RATER VERIFICATION OF EXISTING CONDITIONS[/d:b]</xsd:documentation>
+               <xsd:documentation source="FieldText">[d:b]E3. ECC RATER VERIFICATION OF EXISTING CONDITIONS[/d:b]</xsd:documentation>
                <xsd:appinfo source="CBECCnrXML">
                   <dtyp:CBECCnrXMLterm>This section is required if any condition is true</dtyp:CBECCnrXMLterm>
                   <dtyp:termConditions>p:ExcptCondHERSDuctReqTested == Yes
@@ -4973,7 +4981,7 @@ p:ExcptCondHERSEnvAirLkge == Yes
                   <xsd:element name="HersExc_BeginNote1" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i]The following is a summary of the features that must be field-verified by a certified HERS Rater as a condition for meeting the modeled energy performance for this computer analysis. Additional detail is provided in the building tables below.[/d:i]</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">[d:i]The following is a summary of the features that must be field-verified by a certified ECC Rater as a condition for meeting the modeled energy performance for this computer analysis. Additional detail is provided in the building tables below.[/d:i]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="HersExc_01_HERS_VerificationMeasure" type="comp:HERS_VerificationMeasure"  minOccurs="0" maxOccurs="unbounded">
@@ -12505,7 +12513,7 @@ End If</dtyp:termConditions>
                                     <xsd:choice maxOccurs="1">
                                        <xsd:element name="WaterCompact08_CompactDistributionVerificationRequired" type="comp:CompactDistributionVerificationRequired" >
                                           <xsd:annotation>
-                                             <xsd:documentation source="FieldText">HERS Verification</xsd:documentation>
+                                             <xsd:documentation source="FieldText">ECC Verification</xsd:documentation>
                                              <xsd:appinfo source="CBECCnrXML">
                                                 <dtyp:CBECCnrXMLterm>Spc:ResSpcDHWFeatures:CompactDistIdx = 2 result = true; else false</dtyp:CBECCnrXMLterm>
                                              </xsd:appinfo>
@@ -12513,7 +12521,7 @@ End If</dtyp:termConditions>
                                        </xsd:element>
                                        <xsd:element name="WaterCompact08_NotApplicableMessage" type="comp:NotApplicableMessage" >
                                           <xsd:annotation>
-                                             <xsd:documentation source="FieldText">HERS Verification</xsd:documentation>
+                                             <xsd:documentation source="FieldText">ECC Verification</xsd:documentation>
                                           </xsd:annotation>
                                        </xsd:element>
                                     </xsd:choice>
@@ -12615,7 +12623,7 @@ End If</dtyp:termConditions>
                                     <xsd:choice maxOccurs="1">
                                        <xsd:element name="WaterDWHR05_DWHR_HERS_VerificationRequired" type="comp:DWHR_HERS_VerificationRequired" >
                                           <xsd:annotation>
-                                             <xsd:documentation source="FieldText">HERS Verification</xsd:documentation>
+                                             <xsd:documentation source="FieldText">ECC Verification</xsd:documentation>
                                              <xsd:appinfo source="CBECCnrXML">
                                                 <dtyp:CBECCnrXMLterm>"Required" else "n/a"</dtyp:CBECCnrXMLterm>
                                                 <dtyp:termConditions>If Spc:ResSpcDHWFeatures:NumResDWHRSysDevs = 1 then "Required" else "n/a"</dtyp:termConditions>
@@ -12624,7 +12632,7 @@ End If</dtyp:termConditions>
                                        </xsd:element>
                                        <xsd:element name="WaterDWHR05_NotApplicableMessage" type="comp:NotApplicableMessage" >
                                           <xsd:annotation>
-                                             <xsd:documentation source="FieldText">HERS Verification</xsd:documentation>
+                                             <xsd:documentation source="FieldText">ECC Verification</xsd:documentation>
                                           </xsd:annotation>
                                        </xsd:element>
                                     </xsd:choice>
@@ -14469,7 +14477,7 @@ End If</xsd:documentation>
                   <xsd:element name="Nrci06_RequireNRCIPlb21E" type="comp:RequireNRCIPlb21E"  minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">NRCI-PLB-21-E - Must be HERS verified for central systems in high-rise residential, hotel/motel application</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCI-PLB-21-E - Must be ECC verified for central systems in high-rise residential, hotel/motel application</xsd:documentation>
                         <xsd:documentation source="CalculationsAndRules">If Nrci06_RequiredNRCIPlb21E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -14479,7 +14487,7 @@ End If</xsd:documentation>
                   <xsd:element name="Nrci07_RequireNRCIPlb22E" type="comp:RequireNRCIPlb22E"  minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">NRCI-PLB-22-E - Must be HERS verified for single dwelling unit  systems in high-rise residential, hotel/motel application</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCI-PLB-22-E - Must be ECC verified for single dwelling unit  systems in high-rise residential, hotel/motel application</xsd:documentation>
                         <xsd:documentation source="CalculationsAndRules">If Nrci07_RequiredNRCIPlb22E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -15032,7 +15040,7 @@ End If</xsd:documentation>
                   <xsd:element name="Nrca15_RequireNRCAMch04H" type="comp:RequireNRCAMch04H"  minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04(a)-H - Air Distribution Duct Leakage - HERS Verification required</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04(a)-H - Air Distribution Duct Leakage - ECC Verification required</xsd:documentation>
                         <xsd:documentation source="CalculationsAndRules">If Nrca15_RequiredNRCAMch04H IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -15710,7 +15718,7 @@ End If</xsd:documentation>
                   <xsd:element name="Nrcv05_RequireNRCVPlb21H" type="comp:RequireNRCVPlb21H"  minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">NRCV-PLB-21-H HERS verified central systems in high-rise residential, hotel/motel application</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCV-PLB-21-H ECC verified central systems in high-rise residential, hotel/motel application</xsd:documentation>
                         <xsd:documentation source="CalculationsAndRules">If Nrcv05_RequiredNRCVPlb21H IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -15732,7 +15740,7 @@ End If</xsd:documentation>
                   <xsd:element name="Nrcv06_RequireNRCVPlb22H" type="comp:RequireNRCVPlb22H"  minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">NRCV-PLB-22-H HERS verified single dweliing unit systems in high-rise residential, hotel/motel application</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCV-PLB-22-H ECC verified single dweliing unit systems in high-rise residential, hotel/motel application</xsd:documentation>
                         <xsd:documentation source="CalculationsAndRules">If Nrcv06_RequiredNRCVPlb22H IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
