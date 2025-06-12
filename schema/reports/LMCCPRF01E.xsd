@@ -176,6 +176,14 @@
                   <xsd:element name="Info17_SiteFuelType" type="com:SiteFuelType" >
                      <xsd:annotation>
                         <xsd:documentation source="FieldText">Fuel Type</xsd:documentation>
+			<xsd:appinfo source="displayterm">
+				<dtyp:displayterm value="Electricity">All electric</dtyp:displayterm>
+			</xsd:appinfo>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Info17a_NaturalGasOnSite" type="com:NaturalGasOnSite" >
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">Is Natural Gas Available per Section 100.1?</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
                   <xsd:element name="Info18_NonResBuildingTotalConditionedFloorArea" type="com:NonResBuildingTotalConditionedFloorArea" >
@@ -753,7 +761,7 @@
                   <xsd:element name="C22Result1EndNote" minOccurs="0">
                      <xsd:annotation>
                         <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]*[/d:sup] New Construction: Building complies when Proposed Design is equal to or less than Standard Design in all three compliance categories and unmet load hour limits are not exceeded. 
+                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]*[/d:sup] New Construction: Building complies when Proposed Design is equal to or less than Standard Design in all compliance categories and unmet load hour limits are not exceeded. 
 [d:line1/] Complete Addition Scope and Existing, Addition and Alteration Scope: Building complies when efficiency compliance margin is greater than or equal to zero and unmet load hour limits are not exceeded. [/d:i]</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
@@ -5037,20 +5045,35 @@ p:ExcptCondHERSEnvAirLkge == Yes
                            <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
                               <xsd:complexType>
                                  <xsd:sequence>
-                                    <xsd:element name="Pv01_PV_SystemTotalRatedPowerDC" type="hvac:PV_SystemTotalRatedPowerDC" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">DC System Size (kWdc)</xsd:documentation>
-                                          <xsd:appinfo source="CBECCnrXML">
-                                             <dtyp:CBECCnrXMLterm>Proj:PVArray:DCSysSize</dtyp:CBECCnrXMLterm>
-                                          </xsd:appinfo>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="Pv01b_PV_StandardDesignPowerDC" type="hvac:PV_StandardDesignPowerDC" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
-                                          <xsd:documentation source="AdditionalRequirements">Standard Design DC System Size (kWdc)</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
+				    <xsd:choice maxOccurs="1">
+                                       <xsd:element name="Pv01_PV_SystemTotalRatedPowerDC" type="hvac:PV_SystemTotalRatedPowerDC" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">DC System Size (kWdc)</xsd:documentation>
+                                             <xsd:appinfo source="CBECCnrXML">
+                                                <dtyp:CBECCnrXMLterm>Proj:PVArray:DCSysSize</dtyp:CBECCnrXMLterm>
+                                             </xsd:appinfo>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                       <xsd:element name="Pv01_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">DC System Size (kWdc)</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                    </xsd:choice>
+                                    <xsd:choice maxOccurs="1">
+                                       <xsd:element name="Pv01b_PV_StandardDesignPowerDC" type="hvac:PV_StandardDesignPowerDC" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                                             <xsd:documentation source="AdditionalRequirements">Standard Design DC System Size (kWdc)</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                       <xsd:element name="Pv01b_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                    </xsd:choice>
+                                    <xsd:choice maxOccurs="1">
                                     <xsd:element name="Pv02_PhotoVoltaicExceptionRes" type="comp:PhotoVoltaicExceptionRes" >
                                        <xsd:annotation>
                                           <xsd:documentation source="FieldText">Exception[d:sup]1[/d:sup]</xsd:documentation>
@@ -5059,10 +5082,22 @@ p:ExcptCondHERSEnvAirLkge == Yes
                                           </xsd:appinfo>
                                        </xsd:annotation>
                                     </xsd:element>
+                                       <xsd:element name="Pv02_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Exception[d:sup]1[/d:sup]</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                    </xsd:choice>                                    
                                     <xsd:element name="Pv02_PVExceptionString" type="comp:PVExceptionString"  minOccurs="0">
                                        <xsd:annotation>
                                           <xsd:documentation source="FieldText">Exception</xsd:documentation>
 					  <xsd:documentation source="CalculationsAndRules">If Pv02_PhotoVoltaicExceptionRes == CommunitySolar, this is the display term for it</xsd:documentation>							
+                                       </xsd:annotation>
+                                    </xsd:element>                                   
+                                    <xsd:element name="Pv02_PVNotRequiredMessage" type="comp:PVNotRequiredMessage"  minOccurs="0">
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText"></xsd:documentation>
+					  <xsd:documentation source="CalculationsAndRules">If Pv01 and Pv02 == n/a, this is the display term that fills the rest of this row</xsd:documentation>							
                                        </xsd:annotation>
                                     </xsd:element>
                                     <xsd:choice maxOccurs="1">
@@ -5263,10 +5298,28 @@ p:ExcptCondHERSEnvAirLkge == Yes
                            <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
                               <xsd:complexType>
                                  <xsd:sequence>
-                                    <xsd:element name="PVBatBldgTypes01_BldgOccType" type="comp:PVBattSizeBldgType" >
+                                    <xsd:element name="PVBatBldgTypes01_BldgOccType" >
                                        <xsd:annotation>
                                           <xsd:documentation source="FieldText">Building Occupancy Type[d:sup]*[/d:sup] (From Table 140.10-A/B and 170.2-U/V)</xsd:documentation>
                                        </xsd:annotation>
+				       <xsd:simpleType>
+					  <xsd:restriction base="comp:PVBattSizeBldgType">
+         					<xsd:enumeration value="EventsExhibits"/>
+         					<xsd:enumeration value="Grocery"/>
+         					<xsd:enumeration value="HotelMotel"/>
+         					<xsd:enumeration value="Library"/>
+         					<xsd:enumeration value="LowRiseMultifamily"/>
+         					<xsd:enumeration value="OfficeFinancialUnleased"/>
+         					<xsd:enumeration value="ReligiousWorship"/>
+         					<xsd:enumeration value="Restaurant"/>
+         					<xsd:enumeration value="Retail"/>
+        					<xsd:enumeration value="School"/>
+         					<xsd:enumeration value="SportsRec"/>
+         					<xsd:enumeration value="Warehouse"/>
+         					<xsd:enumeration value="Other"/>
+         					<xsd:enumeration value="None"/>
+					  </xsd:restriction>
+				      </xsd:simpleType>
                                     </xsd:element>
                                     <xsd:element name="PVBatBldgTypes02_CondFloorArea" type="com:TotalConditionedFloorArea" >
                                        <xsd:annotation>
