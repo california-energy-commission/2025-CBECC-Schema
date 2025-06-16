@@ -34,7 +34,7 @@
             <xsd:element name="DocumentData">
                <xsd:complexType>
                   <xsd:sequence>
-                     <xsd:element name="Header" type="comp:HeaderNRCCPRF" />
+                     <xsd:element name="Header" type="comp:HeaderNRCCPRF"/>
                      <xsd:element ref="nRCCPRF" />
                      <xsd:element name="DeclarationsBlock" type="comp:DeclarationsNRCCPRF" maxOccurs="unbounded" />
                      <xsd:element name="Footer" type="comp:FooterNRCCPRF" />
