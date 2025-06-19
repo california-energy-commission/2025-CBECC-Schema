@@ -6020,6 +6020,8 @@
         <dtyp:displayterm value="Excpt2ReducedBattReq">Project is claiming Exception 2 to Section 140.10(b): No battery storage system is required in buildings with battery storage system requirements with less than 10 kWh rated capacity.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt3ReducedBattReq">Project is claiming Exception 3 to Section 140.10(b): No battery storage system required for tenant spaces less than or equal to 5,000 ft2.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt4ReducedBattReq">Project is claiming Exception 4 to Section 140.10(b): In Climate Zone 1, no battery storage system is required for offices, schools and warehouses.</dtyp:displayterm>
+        <dtyp:displayterm value="ExcptCondBldgInFireArea">Building located in a Fire Severity Zone or Wildland-Urban Interface Fire Area and claiming exception to Section 120.7(d).</dtyp:displayterm>
+        <dtyp:displayterm value="ExcptCondExhaustAirHR">Project claiming exception to Section 140.9(c)6 Exhaust Air Heat Recovery requirements.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondPVBldgType">PV/Battery Building Type has been modified from software defaults for one or more spaces. Review project’s PV/Battery Building Type(s) with documentation author. Refer to Energy Code section 140.10 for Nonresidential or 170.2(g) for more information.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondVentStdOther">This project has spaces with higher ventilation rates than required because of other codes or accreditation standards being applied.</dtyp:displayterm>
         <dtyp:displayterm value="FacadeDisplayPerimeter">Verify that the display perimeter for any facades where it is used matches the display perimeter as indicated on the building plans.</dtyp:displayterm>
@@ -6043,6 +6045,8 @@
         <dtyp:displayterm value="SpacesWithNoLighting">Verify that the space(s) defined with no lighting installed are either unconditioned spaces, or that the project has partial lighting compliance.</dtyp:displayterm>
         <dtyp:displayterm value="UnknownHvacSystem">The proposed building includes space(s) that are modeled with unknown HVAC system(s).  Verify that the spaces modeled with unknown HVAC system(s) are either part of core and shell analysis which will be permitted for mechanical compliance in the future, or the spaces have an existing HVAC system not modeled for compliance, or the compliance scope does not include mechanical.</dtyp:displayterm>
         <dtyp:displayterm value="UsingPropane">The proposed building is using Propane despite Natural Gas being available on site.</dtyp:displayterm>
+        <dtyp:displayterm value="VestibuleCheck">Verify project meets the requirements for Vestibules as per Section 120.7(e).</dtyp:displayterm>
+        <dtyp:displayterm value="VestibuleException">Project claiming exception to Section 120.7(e) Vestibules requirements.</dtyp:displayterm>
         <dtyp:displayterm value="ZoneOpeningsInterlock">The project has thermal zones with operable openings modeled without mechanical compliance selected.  Compliance with Section 140.4(n) Mechanical System Shutoff should be considered.</dtyp:displayterm>
       </xsd:appinfo>
     </xsd:annotation>
@@ -6065,6 +6069,8 @@
       <xsd:enumeration value="Excpt2ReducedBattReq"/>
       <xsd:enumeration value="Excpt3ReducedBattReq"/>
       <xsd:enumeration value="Excpt4ReducedBattReq"/>
+      <xsd:enumeration value="ExcptCondBldgInFireArea"/>
+      <xsd:enumeration value="ExcptCondExhaustAirHR"/>
       <xsd:enumeration value="ExcptCondPVBldgType"/>
       <xsd:enumeration value="ExcptCondVentStdOther"/>
       <xsd:enumeration value="FacadeDisplayPerimeter"/>
@@ -6088,6 +6094,8 @@
       <xsd:enumeration value="SpacesWithNoLighting"/>
       <xsd:enumeration value="UnknownHvacSystem"/>
       <xsd:enumeration value="UsingPropane"/>
+      <xsd:enumeration value="VestibuleCheck"/>
+      <xsd:enumeration value="VestibuleException"/>
       <xsd:enumeration value="ZoneOpeningsInterlock"/>
     </xsd:restriction>
   </xsd:simpleType>
@@ -8410,6 +8418,15 @@
     </xsd:annotation>
     <xsd:restriction base="xsd:boolean">
       </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="JA13CompliantHPWH">
+    <xsd:annotation>
+      <xsd:appinfo source="displayterm">
+        <dtyp:displayterm value="true">Yes</dtyp:displayterm>
+        <dtyp:displayterm value="false">No</dtyp:displayterm>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:boolean"/>
   </xsd:simpleType>
   <xsd:simpleType name="JobTitle">
     <xsd:annotation>

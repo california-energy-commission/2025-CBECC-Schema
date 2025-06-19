@@ -418,136 +418,6 @@
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
-         <xsd:element name="Section_DwellInfo" minOccurs="0">
-            <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]F3. DWELLING UNIT INFORMATION[/d:b]</xsd:documentation>
-               <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-               <xsd:sequence>
-                  <xsd:element name="TableDwellingUnits" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                     </xsd:annotation>
-                     <xsd:complexType>
-                        <xsd:sequence>
-                           <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
-                              <xsd:complexType>
-                                 <xsd:sequence>
-                                    <xsd:element name="DwellInfo01_ResidentialDwellingUnitName" type="com:ResidentialDwellingUnitName" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Dwelling Unit Name</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:choice maxOccurs="1">
-                                       <xsd:element name="DwellInfo02_DwellingUnitType" type="com:DwellingUnitType" >
-                                          <xsd:annotation>
-                                             <xsd:documentation source="FieldText">Dwelling Unit Type</xsd:documentation>
-                                          </xsd:annotation>
-                                       </xsd:element>
-                                       <xsd:element name="DwellInfo02_ResidentialDwellingUnitDescriptor" type="com:ResidentialDwellingUnitDescriptor" >
-                                          <xsd:annotation>
-                                             <xsd:documentation source="FieldText">Dwelling Unit Type</xsd:documentation>
-                                          </xsd:annotation>
-                                       </xsd:element>
-                                    </xsd:choice>
-                                    <xsd:element name="DwellInfo03_ThermalZoneName" type="com:ThermalZoneName" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Zone</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellInfo04_ZoneGroupMultiplier" type="hvac:ZoneGroupMultiplier" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Zone Group Multiplier</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellInfo04a_ImprovementStatus" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
-                                       </xsd:annotation>
-                                       <xsd:simpleType>
-					  <xsd:restriction base="com:ImprovementStatus">
-					     <xsd:enumeration value="Existing"/>
-					     <xsd:enumeration value="New"/>
-					  </xsd:restriction>
-				       </xsd:simpleType>
-                                    </xsd:element>
-                                 </xsd:sequence>
-                              </xsd:complexType>
-                           </xsd:element>
-                        </xsd:sequence>
-                     </xsd:complexType>
-                  </xsd:element>
-               </xsd:sequence>
-            </xsd:complexType>
-         </xsd:element>
-         <xsd:element name="Section_DwellType" minOccurs="0">
-            <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]F4. DWELLING UNIT TYPES [/d:b]</xsd:documentation>
-               <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
-            </xsd:annotation>
-            <xsd:complexType>
-               <xsd:sequence>
-                  <xsd:element name="TableDwellingUnitType" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                     </xsd:annotation>
-                     <xsd:complexType>
-                        <xsd:sequence>
-                           <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
-                              <xsd:complexType>
-                                 <xsd:sequence>
-                                    <xsd:choice maxOccurs="1">
-                                       <xsd:element name="DwellType01_ResidentialDwellingUnitDescriptor" type="com:ResidentialDwellingUnitDescriptor" >
-                                          <xsd:annotation>
-                                             <xsd:documentation source="FieldText">Name</xsd:documentation>
-                                          </xsd:annotation>
-                                       </xsd:element>
-                                       <xsd:element name="DwellType01_DwellingUnitType" type="com:DwellingUnitType" >
-                                          <xsd:annotation>
-                                             <xsd:documentation source="FieldText">Name</xsd:documentation>
-                                          </xsd:annotation>
-                                       </xsd:element>
-                                    </xsd:choice>
-                                    <xsd:element name="DwellType02_DwellingUnitConditionedFloorArea" type="com:DwellingUnitConditionedFloorArea" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">CFA (ft[d:sup]2[/d:sup])</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellType03_BedroomCount" type="com:BedroomCount" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Number of Bedrooms</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellType04_DwellingUnitsIdenticalCount" type="comp:DwellingUnitsIdenticalCount" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Number in Building</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellType05_DwellingUnitSpaceConditioningSystemName" type="hvac:DwellingUnitSpaceConditioningSystemName"  maxOccurs="unbounded">
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Space Conditioning Systems Assigned</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellType06_DomesticHotWaterSystemName" type="comp:DomesticHotWaterSystemName" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">DHW System Name</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="DwellType07_IAQ_VentilationFanName" type="hvac:IAQ_VentilationFanName" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">IAQ Vent Fan Name</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                 </xsd:sequence>
-                              </xsd:complexType>
-                           </xsd:element>
-                        </xsd:sequence>
-                     </xsd:complexType>
-                  </xsd:element>
-               </xsd:sequence>
-            </xsd:complexType>
-         </xsd:element>
          <xsd:element name="Section_C22Result1" minOccurs="1">
             <xsd:annotation>
                <xsd:documentation source="FieldText">[d:b]C1. COMPLIANCE  SUMMARY[/d:b]</xsd:documentation>
@@ -4795,7 +4665,7 @@ sum (p:Proj:Bldg:ThrmlZn:HasNoClg) GT 0
          </xsd:element>
          <xsd:element name="Section_HersSum" minOccurs="1">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">E1. VERIFICATION SUMMARY</xsd:documentation>
+               <xsd:documentation source="FieldText">E1. ECC FEATURE SUMMARY</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
@@ -14385,9 +14255,139 @@ Else result = SeeOtherSection  End If</dtyp:termConditions>
                </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
+         <xsd:element name="Section_DwellInfo" minOccurs="0">
+            <xsd:annotation>
+               <xsd:documentation source="FieldText">[d:b]L. DWELLING UNIT INFORMATION[/d:b]</xsd:documentation>
+               <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="TableDwellingUnits" >
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText"></xsd:documentation>
+                     </xsd:annotation>
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                              <xsd:complexType>
+                                 <xsd:sequence>
+                                    <xsd:element name="DwellInfo01_ResidentialDwellingUnitName" type="com:ResidentialDwellingUnitName" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Dwelling Unit Name</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:choice maxOccurs="1">
+                                       <xsd:element name="DwellInfo02_DwellingUnitType" type="com:DwellingUnitType" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Dwelling Unit Type</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                       <xsd:element name="DwellInfo02_ResidentialDwellingUnitDescriptor" type="com:ResidentialDwellingUnitDescriptor" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Dwelling Unit Type</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                    </xsd:choice>
+                                    <xsd:element name="DwellInfo03_ThermalZoneName" type="com:ThermalZoneName" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Zone</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellInfo04_ZoneGroupMultiplier" type="hvac:ZoneGroupMultiplier" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Zone Group Multiplier</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellInfo04a_ImprovementStatus" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                                       </xsd:annotation>
+                                       <xsd:simpleType>
+					  <xsd:restriction base="com:ImprovementStatus">
+					     <xsd:enumeration value="Existing"/>
+					     <xsd:enumeration value="New"/>
+					  </xsd:restriction>
+				       </xsd:simpleType>
+                                    </xsd:element>
+                                 </xsd:sequence>
+                              </xsd:complexType>
+                           </xsd:element>
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
+         <xsd:element name="Section_DwellType" minOccurs="0">
+            <xsd:annotation>
+               <xsd:documentation source="FieldText">[d:b]M. DWELLING UNIT TYPES [/d:b]</xsd:documentation>
+               <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
+            </xsd:annotation>
+            <xsd:complexType>
+               <xsd:sequence>
+                  <xsd:element name="TableDwellingUnitType" >
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText"></xsd:documentation>
+                     </xsd:annotation>
+                     <xsd:complexType>
+                        <xsd:sequence>
+                           <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                              <xsd:complexType>
+                                 <xsd:sequence>
+                                    <xsd:choice maxOccurs="1">
+                                       <xsd:element name="DwellType01_ResidentialDwellingUnitDescriptor" type="com:ResidentialDwellingUnitDescriptor" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Name</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                       <xsd:element name="DwellType01_DwellingUnitType" type="com:DwellingUnitType" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Name</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
+                                    </xsd:choice>
+                                    <xsd:element name="DwellType02_DwellingUnitConditionedFloorArea" type="com:DwellingUnitConditionedFloorArea" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">CFA (ft[d:sup]2[/d:sup])</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellType03_BedroomCount" type="com:BedroomCount" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Number of Bedrooms</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellType04_DwellingUnitsIdenticalCount" type="comp:DwellingUnitsIdenticalCount" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Number in Building</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellType05_DwellingUnitSpaceConditioningSystemName" type="hvac:DwellingUnitSpaceConditioningSystemName"  maxOccurs="unbounded">
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">Space Conditioning Systems Assigned</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellType06_DomesticHotWaterSystemName" type="comp:DomesticHotWaterSystemName" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">DHW System Name</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                    <xsd:element name="DwellType07_IAQ_VentilationFanName" type="hvac:IAQ_VentilationFanName" >
+                                       <xsd:annotation>
+                                          <xsd:documentation source="FieldText">IAQ Vent Fan Name</xsd:documentation>
+                                       </xsd:annotation>
+                                    </xsd:element>
+                                 </xsd:sequence>
+                              </xsd:complexType>
+                           </xsd:element>
+                        </xsd:sequence>
+                     </xsd:complexType>
+                  </xsd:element>
+               </xsd:sequence>
+            </xsd:complexType>
+         </xsd:element>
          <xsd:element name="Section_Nrci" minOccurs="1">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]L. DECLARATION OF REQUIRED CERTIFICATES OF INSTALLATION[/d:b]</xsd:documentation>
+               <xsd:documentation source="FieldText">[d:b]N. DECLARATION OF REQUIRED CERTIFICATES OF INSTALLATION[/d:b]</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
@@ -14690,7 +14690,7 @@ End If</xsd:documentation>
          </xsd:element>
          <xsd:element name="Section_Nrca" minOccurs="1">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]M. DECLARATION OF REQUIRED CERTIFICATES OF ACCEPTANCE [/d:b]</xsd:documentation>
+               <xsd:documentation source="FieldText">[d:b]O. DECLARATION OF REQUIRED CERTIFICATES OF ACCEPTANCE [/d:b]</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
@@ -15631,7 +15631,7 @@ End If</xsd:documentation>
          </xsd:element>
          <xsd:element name="Section_Nrcv" minOccurs="1">
             <xsd:annotation>
-               <xsd:documentation source="FieldText">[d:b]N. DECLARATION OF REQUIRED CERTIFICATES OF VERIFICATION [/d:b]</xsd:documentation>
+               <xsd:documentation source="FieldText">[d:b]P. DECLARATION OF REQUIRED CERTIFICATES OF VERIFICATION [/d:b]</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
