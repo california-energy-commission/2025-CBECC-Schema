@@ -10439,6 +10439,11 @@ Else If result == NotContinuous display No</xsd:documentation>
                                              <xsd:documentation source="FieldText">Equipment Type</xsd:documentation>
                                           </xsd:annotation>
                                        </xsd:element>
+                                       <xsd:element name="HvacWet02_HeatPumpType" type="hvac:HeatPumpType" >
+                                          <xsd:annotation>
+                                             <xsd:documentation source="FieldText">Equipment Type</xsd:documentation>
+                                          </xsd:annotation>
+                                       </xsd:element>
                                        <xsd:element name="HvacWet02_ThermalEnergyStorageType" type="hvac:ThermalEnergyStorageType" >
                                           <xsd:annotation>
                                              <xsd:documentation source="FieldText">Equipment Type</xsd:documentation>

@@ -6023,7 +6023,7 @@
             <dtyp:displayterm value="Excpt2ReducedBattReq">Project is claiming Exception 2 to Section 140.10(b): No battery storage system is required in buildings with battery storage system requirements with less than 10 kWh rated capacity.</dtyp:displayterm>
             <dtyp:displayterm value="Excpt3ReducedBattReq">Project is claiming Exception 3 to Section 140.10(b): No battery storage system required for tenant spaces less than or equal to 5,000 ft2.</dtyp:displayterm>
             <dtyp:displayterm value="Excpt4ReducedBattReq">Project is claiming Exception 4 to Section 140.10(b): In Climate Zone 1, no battery storage system is required for offices, schools and warehouses.</dtyp:displayterm>
-            <dtyp:displayterm value="ExcptCondBldgInFireArea">Building located in a Fire Severity Zone or Wildland-Urban Interface Fire Area and claiming exception to Section 120.7(d).</dtyp:displayterm>
+            <dtyp:displayterm value="ExcptCondBldgInFireArea">Building located in a Fire Hazard Severity Zone or Wildland-Urban Interface Fire Area and claiming exception to Section 120.7(d).</dtyp:displayterm>
             <dtyp:displayterm value="ExcptCondExhaustAirHR">Project claiming exception to Section 140.9(c)6 Exhaust Air Heat Recovery requirements.</dtyp:displayterm>
             <dtyp:displayterm value="ExcptCondPVBldgType">PV/Battery Building Type has been modified from software defaults for one or more spaces. Review project’s PV/Battery Building Type(s) with documentation author. Refer to Energy Code section 140.10 for Nonresidential or 170.2(g) for more information.</dtyp:displayterm>
             <dtyp:displayterm value="ExcptCondVentStdOther">This project has spaces with higher ventilation rates than required because of other codes or accreditation standards being applied.</dtyp:displayterm>
@@ -11798,15 +11798,13 @@
          </xsd:appinfo>
          <xsd:appinfo source="displayterm">
             <dtyp:displayterm value="EventsExhibits">Events and Exhibits</dtyp:displayterm>
-            <dtyp:displayterm value="Grocery">Retail, Grocery</dtyp:displayterm>
             <dtyp:displayterm value="HighRiseMultifamily">Multifamily greater than 3 stories</dtyp:displayterm>
             <dtyp:displayterm value="HotelMotel">Hotel/Motel</dtyp:displayterm>           
-            <dtyp:displayterm value="Library">Library</dtyp:displayterm>            
-            <dtyp:displayterm value="LowRiseMultifamily">Multifamily 3 stories or less</dtyp:displayterm>
+            <dtyp:displayterm value="Library">Library</dtyp:displayterm>  
             <dtyp:displayterm value="OfficeFinancialUnleased">Office, Financial Institutions, Unleased Tenant Space, Medical Office Building/Clinic</dtyp:displayterm>
             <dtyp:displayterm value="ReligiousWorship">Religious Worship</dtyp:displayterm>
             <dtyp:displayterm value="Restaurant">Restaurants</dtyp:displayterm>
-            <dtyp:displayterm value="Retail">Retail</dtyp:displayterm>
+            <dtyp:displayterm value="RetailGrocery">Retail, Grocery</dtyp:displayterm>
             <dtyp:displayterm value="School">School</dtyp:displayterm>
             <dtyp:displayterm value="SportsRec">Sports and Recreation</dtyp:displayterm>
             <dtyp:displayterm value="Warehouse">Warehouse</dtyp:displayterm>
@@ -11816,15 +11814,13 @@
       </xsd:annotation>
       <xsd:restriction base="dtyp:EnumerationConstant">
          <xsd:enumeration value="EventsExhibits"/>
-         <xsd:enumeration value="Grocery"/>
          <xsd:enumeration value="HighRiseMultifamily"/>
          <xsd:enumeration value="HotelMotel"/>
          <xsd:enumeration value="Library"/>
-         <xsd:enumeration value="LowRiseMultifamily"/>
          <xsd:enumeration value="OfficeFinancialUnleased"/>
          <xsd:enumeration value="ReligiousWorship"/>
          <xsd:enumeration value="Restaurant"/>
-         <xsd:enumeration value="Retail"/>
+         <xsd:enumeration value="RetailGrocery"/>
          <xsd:enumeration value="School"/>
          <xsd:enumeration value="SportsRec"/>
          <xsd:enumeration value="Warehouse"/>

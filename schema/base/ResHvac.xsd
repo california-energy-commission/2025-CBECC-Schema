@@ -5118,6 +5118,16 @@
          <xsd:enumeration value="NotOnWaterLoop"/>
       </xsd:restriction>
    </xsd:simpleType>
+   <xsd:simpleType name="HeatPumpType">
+      <xsd:annotation>
+         <xsd:appinfo source="displayterm">
+            <dtyp:displayterm value="AirToWaterHeatPump">Air-to-Water Heat Pump</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:EnumerationConstant">
+         <xsd:enumeration value="AirToWaterHeatPump"/>
+      </xsd:restriction>
+   </xsd:simpleType>
    <xsd:simpleType name="HeatPumpWaterHeaterBrand">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
@@ -8534,6 +8544,7 @@
          <xsd:appinfo source="displayterm">
             <dtyp:displayterm value="DCV">DCV Controls</dtyp:displayterm>
             <dtyp:displayterm value="DDC">DDC Controls</dtyp:displayterm>
+            <dtyp:displayterm value="DDCASHRAEGuideline36">DDC Controls (ASHRAE Guideline 36)</dtyp:displayterm>
             <dtyp:displayterm value="DualMaxReheat">Dual Maximum Reheat Controls</dtyp:displayterm>
             <dtyp:displayterm value="FID">Fault Indicator Display</dtyp:displayterm>
             <dtyp:displayterm value="Fixed2SetpointTempControl">Fixed Dual SetpointTemperature Control</dtyp:displayterm>
@@ -8557,6 +8568,7 @@
       <xsd:restriction base="dtyp:EnumerationConstant">
          <xsd:enumeration value="DCV"/>
          <xsd:enumeration value="DDC"/>
+         <xsd:enumeration value="DDCASHRAEGuideline36"/>
          <xsd:enumeration value="DualMaxReheat"/>
          <xsd:enumeration value="FID"/>
          <xsd:enumeration value="Fixed2SetpointTempControl"/>
