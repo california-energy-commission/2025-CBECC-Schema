@@ -928,6 +928,16 @@
     <xsd:restriction base="xsd:boolean">
       </xsd:restriction>
   </xsd:simpleType>
+  <xsd:simpleType name="BatNotRequiredMessage">
+    <xsd:annotation>
+      <xsd:appinfo source="displayterm">
+        <dtyp:displayterm value="BatIncludedNotRequired">Battery included in performance scope, but is not required.</dtyp:displayterm>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:restriction base="dtyp:EnumerationConstant">
+      <xsd:enumeration value="BatIncludedNotRequired"/>
+    </xsd:restriction>
+  </xsd:simpleType>
   <xsd:simpleType name="BlankElecBoxReq">
     <xsd:annotation>
       <xsd:appinfo source="displayterm">
@@ -6021,6 +6031,7 @@
         <dtyp:displayterm value="Excpt3ReducedBattReq">Project is claiming Exception 3 to Section 140.10(b): No battery storage system required for tenant spaces less than or equal to 5,000 ft2.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt4ReducedBattReq">Project is claiming Exception 4 to Section 140.10(b): In Climate Zone 1, no battery storage system is required for offices, schools and warehouses.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondBldgInFireArea">Building located in a Fire Hazard Severity Zone or Wildland-Urban Interface Fire Area and claiming exception to Section 120.7(d).</dtyp:displayterm>
+        <dtyp:displayterm value="ExcptCondCampusPV">Project will follow Division of State Architect's or California State University's procedures for school campus PV systems to comply</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondExhaustAirHR">Project claiming exception to Section 140.9(c)6 Exhaust Air Heat Recovery requirements.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondPVBldgType">PV/Battery Building Type has been modified from software defaults for one or more spaces. Review project’s PV/Battery Building Type(s) with documentation author. Refer to Energy Code section 140.10 for Nonresidential or 170.2(g) for more information.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptCondVentStdOther">This project has spaces with higher ventilation rates than required because of other codes or accreditation standards being applied.</dtyp:displayterm>
@@ -6070,6 +6081,7 @@
       <xsd:enumeration value="Excpt3ReducedBattReq"/>
       <xsd:enumeration value="Excpt4ReducedBattReq"/>
       <xsd:enumeration value="ExcptCondBldgInFireArea"/>
+      <xsd:enumeration value="ExcptCondCampusPV"/>
       <xsd:enumeration value="ExcptCondExhaustAirHR"/>
       <xsd:enumeration value="ExcptCondPVBldgType"/>
       <xsd:enumeration value="ExcptCondVentStdOther"/>

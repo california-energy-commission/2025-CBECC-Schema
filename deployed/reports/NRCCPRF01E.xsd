@@ -5325,20 +5325,40 @@ p:ExcptCondHERSEnvAirLkge == Yes
                   <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
                     <xsd:complexType>
                       <xsd:sequence>
-                        <xsd:element name="Bat01_BatteryControl" type="hvac:BatteryControl">
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Bat01_BatteryControl" type="hvac:BatteryControl">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Control</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>Proj:Batt:Ctrl</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Bat01_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Control</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Bat02_BatteryCapacity" type="hvac:BatteryCapacity">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Capacity (kWh)</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>Proj:Batt:MaxCap</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Bat02_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Capacity (kWh)</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:element name="Bat02_BatNotRequiredMessage" type="comp:BatNotRequiredMessage" minOccurs="0">
                           <xsd:annotation>
-                            <xsd:documentation source="FieldText">Control</xsd:documentation>
-                            <xsd:appinfo source="CBECCnrXML">
-                              <dtyp:CBECCnrXMLterm>Proj:Batt:Ctrl</dtyp:CBECCnrXMLterm>
-                            </xsd:appinfo>
-                          </xsd:annotation>
-                        </xsd:element>
-                        <xsd:element name="Bat02_BatteryCapacity" type="hvac:BatteryCapacity">
-                          <xsd:annotation>
-                            <xsd:documentation source="FieldText">Capacity (kWh)</xsd:documentation>
-                            <xsd:appinfo source="CBECCnrXML">
-                              <dtyp:CBECCnrXMLterm>Proj:Batt:MaxCap</dtyp:CBECCnrXMLterm>
-                            </xsd:appinfo>
+                            <xsd:documentation source="FieldText"/>
+                            <xsd:documentation source="CalculationsAndRules">If Bat01 And Bat02 == n/a, this is the display term that fills the rest of this row</xsd:documentation>
                           </xsd:annotation>
                         </xsd:element>
                         <xsd:choice maxOccurs="1">
@@ -14957,13 +14977,13 @@ End If</xsd:documentation>
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
                 <xsd:documentation source="AdditionalRequirements">
-                  <d:i> Selections made by Documentation Author indicate which Certificates of Acceptance must be submitted for the features to be recognized for compliance.  These documents must be provided to the building inspector during construction and must be completed through an Acceptance Test Technician Certification Provider (ATTCP). </d:i>
+                  <d:i> Selections made by Documentation Author indicate which Certificates of Acceptance must be submitted for the features to be recognized for compliance.  These documents must be provided to the building inspector during construction. Lighting controls and mechanical NRCAs must be completed through an Acceptance Test Technician Certification Provider (ATTCP). </d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
             <xsd:element name="NrcaLabel01" minOccurs="0">
               <xsd:annotation>
-                <xsd:documentation source="FieldText">Building Component</xsd:documentation>
+                <xsd:documentation source="FieldText">Building Component <d:sup>1</d:sup></xsd:documentation>
               </xsd:annotation>
             </xsd:element>
             <xsd:element name="NrcaLabel02" minOccurs="0">
@@ -15792,6 +15812,14 @@ End If</xsd:documentation>
             <xsd:element name="Nrca35_SystemsToFieldVerify" type="comp:SystemsToFieldVerify" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">Systems To Be Field Verified</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="NrcaEndNote1" minOccurs="0">
+              <xsd:annotation>
+                <xsd:documentation source="FieldText"/>
+                <xsd:documentation source="AdditionalRequirements">
+                  <d:i><d:sup>1</d:sup>Refer to other prescriptive NRCC forms applicable to the project for additional NRCA tests required that are not included in the NRCC-PRF-E form</d:i>
+                </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
             <xsd:element name="TableCountCAMch" minOccurs="0">
