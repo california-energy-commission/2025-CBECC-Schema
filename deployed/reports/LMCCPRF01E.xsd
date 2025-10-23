@@ -644,14 +644,26 @@
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
-            <xsd:element name="C22Result1EndNote3" minOccurs="0">
-              <xsd:annotation>
-                <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">
-                  <d:i><d:sup>3</d:sup> Totals include the sum of efficiency measures, solar photovoltaic (PV) measures and battery storage measures</d:i>
-                </xsd:documentation>
-              </xsd:annotation>
-            </xsd:element>
+            <xsd:choice>
+              <xsd:element name="C22Result1EndNote3a" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation source="FieldText"/>
+                  <xsd:documentation source="CalculationsAndRules">If all instances of Feat01_SpecialFeatureCategory != ExecOrderN29_25, display this version of footnote 2 </xsd:documentation>
+                  <xsd:documentation source="AdditionalRequirements">
+                    <d:i><d:sup>2</d:sup> Compliance Totals include efficiency, photovoltaics and batteries</d:i>
+                  </xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="C22Result1EndNote3b" minOccurs="0">
+                <xsd:annotation>
+                  <xsd:documentation source="FieldText"/>
+                  <xsd:documentation source="CalculationsAndRules">If at least one instance of Feat01_SpecialFeatureCategory == ExecOrderN29_25, display this version of footnote 2 </xsd:documentation>
+                  <xsd:documentation source="AdditionalRequirements">
+                    <d:i><d:sup>2</d:sup> Compliance Totals include efficiency and no photovoltaics and batteries</d:i>
+                  </xsd:documentation>
+                </xsd:annotation>
+              </xsd:element>
+            </xsd:choice>
             <xsd:element name="C22Result1EndNote" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>

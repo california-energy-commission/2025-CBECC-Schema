@@ -8213,6 +8213,7 @@
             <dtyp:displayterm value="ExcptCondExhaustAirHR">Project claiming exception to Section 140.9(c)6 Exhaust Air Heat Recovery requirements.</dtyp:displayterm>
             <dtyp:displayterm value="ExcptCondPVBldgType">PV/Battery Building Type has been modified from software defaults for one or more spaces. Review project’s PV/Battery Building Type(s) with documentation author. Refer to Energy Code section 140.10 for Nonresidential or 170.2(g) for more information.</dtyp:displayterm>
             <dtyp:displayterm value="ExcptCondVentStdOther">This project has spaces with higher ventilation rates than required because of other codes or accreditation standards being applied.</dtyp:displayterm>
+	    <dtyp:displayterm value="ExecOrderN29_25">Solar Electric Generation Systems / Solar PV System requirements for newly constructed residential buildings are suspended per Executive Order N-29-25</dtyp:displayterm>
             <dtyp:displayterm value="FacadeDisplayPerimeter">Verify that the display perimeter for any facades where it is used matches the display perimeter as indicated on the building plans.</dtyp:displayterm>
             <dtyp:displayterm value="FanPressureDropCredit">Review and verify the fan pressure drop credits taken for HVAC systems included in the project.</dtyp:displayterm>
             <dtyp:displayterm value="FixedSeatingUsedForCalculatingVentilation">This project includes spaces that use an expected number of occupants or fixed seating criteria for calculating ventilation. Review space uses and verify that the applicable spaces meet the qualifications of Exception 1 to Section 120.1(c)3.</dtyp:displayterm>
@@ -8263,6 +8264,7 @@
          <xsd:enumeration value="ExcptCondExhaustAirHR"/>
          <xsd:enumeration value="ExcptCondPVBldgType"/>
          <xsd:enumeration value="ExcptCondVentStdOther"/>
+	 <xsd:enumeration value="ExecOrderN29_25"/>
          <xsd:enumeration value="FacadeDisplayPerimeter"/>
          <xsd:enumeration value="FanPressureDropCredit"/>
          <xsd:enumeration value="FixedSeatingUsedForCalculatingVentilation"/>
@@ -19031,6 +19033,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
             <dtyp:displayterm value="DuctsNonstandardLocation">Non-standard duct location (any location other than attic)</dtyp:displayterm>
             <dtyp:displayterm value="ElectInstantaneousPOU">Electric water heater exception - Exception 2 to Section 150.1(c)8: Instantaneous electric water heater with POU distribution</dtyp:displayterm>
             <dtyp:displayterm value="ElectStoragePOU">Electric water heater exception - Exception 2 to Section 150.1(c)8: Electric resistance storage water heater [d:lte/] 20 gal with POU distribution</dtyp:displayterm>
+	    <dtyp:displayterm value="ExecOrderN29_25">Solar Electric Generation Systems / Solar PV System requirements for newly constructed residential buildings are suspended per Executive Order N-29-25</dtyp:displayterm>
             <dtyp:displayterm value="ExposedSlabFloor">Exposed slab floor in conditioned zone</dtyp:displayterm>
             <dtyp:displayterm value="ExteriorWindowShades">Exterior window shades</dtyp:displayterm>
             <dtyp:displayterm value="HeatedSlab">Heated slab</dtyp:displayterm>
@@ -19107,6 +19110,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
          <xsd:enumeration value="DuctsNonstandardLocation"/>
          <xsd:enumeration value="ElectInstantaneousPOU"/>
          <xsd:enumeration value="ElectStoragePOU"/>
+	 <xsd:enumeration value="ExecOrderN29_25"/>
          <xsd:enumeration value="ExposedSlabFloor"/>
          <xsd:enumeration value="ExteriorWindowShades"/>
          <xsd:enumeration value="HeatedSlab"/>
