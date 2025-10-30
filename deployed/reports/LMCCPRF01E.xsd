@@ -648,18 +648,18 @@
               <xsd:element name="C22Result1EndNote3a" minOccurs="0">
                 <xsd:annotation>
                   <xsd:documentation source="FieldText"/>
-                  <xsd:documentation source="CalculationsAndRules">If all instances of Feat01_SpecialFeatureCategory != ExecOrderN29_25, display this version of footnote 2 </xsd:documentation>
+                  <xsd:documentation source="CalculationsAndRules">If all instances of Feat01_SpecialFeatureCategory != ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
                   <xsd:documentation source="AdditionalRequirements">
-                    <d:i><d:sup>2</d:sup> Compliance Totals include efficiency, photovoltaics and batteries</d:i>
+                    <d:i><d:sup>3</d:sup> Compliance Totals include efficiency, photovoltaics and batteries</d:i>
                   </xsd:documentation>
                 </xsd:annotation>
               </xsd:element>
               <xsd:element name="C22Result1EndNote3b" minOccurs="0">
                 <xsd:annotation>
                   <xsd:documentation source="FieldText"/>
-                  <xsd:documentation source="CalculationsAndRules">If at least one instance of Feat01_SpecialFeatureCategory == ExecOrderN29_25, display this version of footnote 2 </xsd:documentation>
+                  <xsd:documentation source="CalculationsAndRules">If at least one instance of Feat01_SpecialFeatureCategory == ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
                   <xsd:documentation source="AdditionalRequirements">
-                    <d:i><d:sup>2</d:sup> Compliance Totals include efficiency and no photovoltaics and batteries</d:i>
+                    <d:i><d:sup>3</d:sup> Compliance Totals include efficiency and no photovoltaics and batteries</d:i>
                   </xsd:documentation>
                 </xsd:annotation>
               </xsd:element>
@@ -9853,6 +9853,140 @@ result = NotApplicable</xsd:documentation>
                 </xsd:sequence>
               </xsd:complexType>
             </xsd:element>
+            <xsd:element name="TableFanEff" minOccurs="0">
+              <xsd:annotation>
+                <xsd:documentation source="FieldText"/>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                      <xsd:sequence>
+                        <xsd:element name="Fan14_HvacSystemName" type="comp:HvacSystemName">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Name or Item Tag</xsd:documentation>
+                            <xsd:documentation source="CalculationsAndRules">This is a string that identifies either an  Air System, Zone System or Terminal Unit in a VRF System</xsd:documentation>
+                            <xsd:appinfo source="CBECCnrXML">
+                              <dtyp:CBECCnrXMLterm>AirSys:Nameor ZnSys:Name</dtyp:CBECCnrXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="Fan15to17Subheading" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">
+                              <d:b>Supply Fan </d:b>
+                            </xsd:documentation>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan15_ModelingMethod" type="hvac:ModelingMethod">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:ModelingMthd Or ZnSys:Fan:ModelingMthd</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan15_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan16_FanEfficiency" type="hvac:FanEfficiency">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:FlowEff Or ZnSys:Fan:FlowEff</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan16_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan17_MotorEfficiency" type="hvac:MotorEfficiency">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:MtrEff Or ZnSys:Fan:MtrEff</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan17_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:element name="Fan18to20Subheading" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">
+                              <d:b>Return / Relief Fan </d:b>
+                            </xsd:documentation>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan18_ModelingMethod" type="hvac:ModelingMethod">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:ModelingMthd Or ZnSys:Fan:ModelingMthd</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan18_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan19_FanEfficiency" type="hvac:FanEfficiency">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:FlowEff Or ZnSys:Fan:FlowEff</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan19_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Fan20_MotorEfficiency" type="hvac:MotorEfficiency">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
+                              <xsd:appinfo source="CBECCnrXML">
+                                <dtyp:CBECCnrXMLterm>AirSys:AirSeg:Fan:MtrEff Or ZnSys:Fan:MtrEff</dtyp:CBECCnrXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Fan20_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
+                              <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                      </xsd:sequence>
+                    </xsd:complexType>
+                  </xsd:element>
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
             <xsd:element name="FanFootNote1" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
@@ -15672,7 +15806,7 @@ Else there is no display for this element
 End If</xsd:documentation>
               </xsd:annotation>
             </xsd:element>
-            <xsd:element name="NrtiSabLabel" minOccurs="0">
+            <xsd:element name="NrciSabLabel" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">Solar and Battery</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci08a_RequireNRCISabE IsPresent and == true Display this label

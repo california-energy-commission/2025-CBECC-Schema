@@ -4235,6 +4235,16 @@
       <xsd:restriction base="dtyp:DecimalNonnegative">
       </xsd:restriction>
    </xsd:simpleType>
+   <xsd:simpleType name="FanEfficiency">
+      <xsd:annotation>
+         <xsd:documentation>  Units: No units</xsd:documentation>
+         <xsd:appinfo source="displaytermType">
+            <dtyp:displayterm>Fan Efficiency</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:Decimal3Places">
+      </xsd:restriction>
+   </xsd:simpleType>
    <xsd:simpleType name="FanFlowCapacity">
       <xsd:annotation>
          <xsd:documentation>Defines the volumetric capacity of the fan measured in cubic ft per minute (cfm).  The fan's peak airflow is what it is rated at when running at full capacity.  Units: ft3 per min</xsd:documentation>
@@ -10817,6 +10827,21 @@
          <xsd:enumeration value="YN58_30"/>
       </xsd:restriction>
    </xsd:simpleType>
+   <xsd:simpleType name="ModelingMethod">
+      <xsd:annotation>
+         <xsd:documentation>Defines how the FanSystem is modeled.</xsd:documentation>
+         <xsd:appinfo source="displayterm">
+            <dtyp:displayterm value="BrakeHorsePower">Brake Horse Power</dtyp:displayterm>
+            <dtyp:displayterm value="PowerPerUnitFlow">Power Per Unit Flow</dtyp:displayterm>
+            <dtyp:displayterm value="StaticPressure">Static Pressure</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:EnumerationConstant">
+         <xsd:enumeration value="BrakeHorsePower"/>
+         <xsd:enumeration value="PowerPerUnitFlow"/>
+         <xsd:enumeration value="StaticPressure"/>
+      </xsd:restriction>
+   </xsd:simpleType>
    <xsd:simpleType name="ModelNumber">
       <xsd:restriction base="xsd:string">
       </xsd:restriction>
@@ -10826,6 +10851,16 @@
          <xsd:documentation>  Units: hp</xsd:documentation>
          <xsd:appinfo source="displaytermType">
             <dtyp:displayterm>Motor BHP</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:DecimalNonnegative">
+      </xsd:restriction>
+   </xsd:simpleType>
+   <xsd:simpleType name="MotorEfficiency">
+      <xsd:annotation>
+         <xsd:documentation>Indicates how well the motor converts electrical power into mechanical power and is defined as output power divided by input power expressed as a percentage .  Units: none</xsd:documentation>
+         <xsd:appinfo source="displaytermType">
+            <dtyp:displayterm>Motor Efficiency</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
       <xsd:restriction base="dtyp:DecimalNonnegative">
