@@ -8100,6 +8100,12 @@ result = NotApplicable</xsd:documentation>
                             </xsd:annotation>
                           </xsd:element>
                         </xsd:choice>
+                        <xsd:element name="Hvacdwell10a_HeatPumpBackupFuel" type="hvac:HeatPumpBackupFuel" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Backup</xsd:documentation>
+                            <xsd:documentation source="AdditionalRequirements"/>
+                          </xsd:annotation>
+                        </xsd:element>
                         <xsd:element name="Hvacdwell11to13SubLabel" minOccurs="0">
                           <xsd:annotation>
                             <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
@@ -8374,6 +8380,19 @@ result = NotApplicable</xsd:documentation>
                               </xsd:element>
                             </xsd:choice>
                           </xsd:complexType>
+                        </xsd:element>
+                        <xsd:element name="Hvacdwell16a_IsVSD" type="hvac:IsVSD" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Variable Speed</xsd:documentation>
+                            <xsd:appinfo source="displayterm">
+                              <dtyp:displayterm value="true">True</dtyp:displayterm>
+                              <dtyp:displayterm value="false">False</dtyp:displayterm>
+                            </xsd:appinfo>
+                            <xsd:documentation source="CalculationsAndRules">This column should display a checkbox.  If result = true, display box checked, Else unchecked. </xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm/>
+                            </xsd:appinfo>
+                          </xsd:annotation>
                         </xsd:element>
                         <xsd:choice maxOccurs="1">
                           <xsd:element name="Hvacdwell17_Status">
@@ -9862,7 +9881,7 @@ result = NotApplicable</xsd:documentation>
                   <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
                     <xsd:complexType>
                       <xsd:sequence>
-                        <xsd:element name="Fan14_HvacSystemName" type="comp:HvacSystemName">
+                        <xsd:element name="Fan01_HvacSystemName" type="comp:HvacSystemName">
                           <xsd:annotation>
                             <xsd:documentation source="FieldText">Name or Item Tag</xsd:documentation>
                             <xsd:documentation source="CalculationsAndRules">This is a string that identifies either an  Air System, Zone System or Terminal Unit in a VRF System</xsd:documentation>
@@ -9871,7 +9890,7 @@ result = NotApplicable</xsd:documentation>
                             </xsd:appinfo>
                           </xsd:annotation>
                         </xsd:element>
-                        <xsd:element name="Fan15to17Subheading" minOccurs="0">
+                        <xsd:element name="Fan14to16Subheading" minOccurs="0">
                           <xsd:annotation>
                             <xsd:documentation source="FieldText">
                               <d:b>Supply Fan </d:b>
@@ -9879,7 +9898,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:annotation>
                         </xsd:element>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan15_ModelingMethod" type="hvac:ModelingMethod">
+                          <xsd:element name="Fan14_ModelingMethod" type="hvac:ModelingMethod">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9887,7 +9906,7 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan15_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan14_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
@@ -9895,7 +9914,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:element>
                         </xsd:choice>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan16_FanEfficiency" type="hvac:FanEfficiency">
+                          <xsd:element name="Fan15_FanEfficiency" type="hvac:FanEfficiency">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9903,7 +9922,7 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan16_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan15_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
@@ -9911,7 +9930,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:element>
                         </xsd:choice>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan17_MotorEfficiency" type="hvac:MotorEfficiency">
+                          <xsd:element name="Fan16_MotorEfficiency" type="hvac:MotorEfficiency">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9919,14 +9938,14 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan17_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan16_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
                             </xsd:annotation>
                           </xsd:element>
                         </xsd:choice>
-                        <xsd:element name="Fan18to20Subheading" minOccurs="0">
+                        <xsd:element name="Fan17to19Subheading" minOccurs="0">
                           <xsd:annotation>
                             <xsd:documentation source="FieldText">
                               <d:b>Return / Relief Fan </d:b>
@@ -9934,7 +9953,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:annotation>
                         </xsd:element>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan18_ModelingMethod" type="hvac:ModelingMethod">
+                          <xsd:element name="Fan17_ModelingMethod" type="hvac:ModelingMethod">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9942,7 +9961,7 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan18_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan17_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Modeling Method</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
@@ -9950,7 +9969,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:element>
                         </xsd:choice>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan19_FanEfficiency" type="hvac:FanEfficiency">
+                          <xsd:element name="Fan18_FanEfficiency" type="hvac:FanEfficiency">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9958,7 +9977,7 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan19_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan18_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Fan Efficiency</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>
@@ -9966,7 +9985,7 @@ result = NotApplicable</xsd:documentation>
                           </xsd:element>
                         </xsd:choice>
                         <xsd:choice maxOccurs="1">
-                          <xsd:element name="Fan20_MotorEfficiency" type="hvac:MotorEfficiency">
+                          <xsd:element name="Fan19_MotorEfficiency" type="hvac:MotorEfficiency">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
                               <xsd:appinfo source="CBECCnrXML">
@@ -9974,7 +9993,7 @@ result = NotApplicable</xsd:documentation>
                               </xsd:appinfo>
                             </xsd:annotation>
                           </xsd:element>
-                          <xsd:element name="Fan20_NotApplicableMessage" type="comp:NotApplicableMessage">
+                          <xsd:element name="Fan19_NotApplicableMessage" type="comp:NotApplicableMessage">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">Motor Efficiency</xsd:documentation>
                               <xsd:documentation source="CalculationsAndRules">If no supply fan, result is NA</xsd:documentation>

@@ -4460,6 +4460,21 @@
          <xsd:enumeration value="AirCooledUnitaryACHP_Split"/>
       </xsd:restriction>
    </xsd:simpleType>
+   <xsd:simpleType name="HeatPumpBackupFuel">
+      <xsd:annotation>
+         <xsd:appinfo source="displaytermType">
+            <dtyp:displayterm>Heat Pump Backup Fuel</dtyp:displayterm>
+         </xsd:appinfo>
+         <xsd:appinfo source="displayterm">
+            <dtyp:displayterm value="Electric">Electric</dtyp:displayterm>
+            <dtyp:displayterm value="Gas">Gas</dtyp:displayterm>
+         </xsd:appinfo>
+      </xsd:annotation>
+      <xsd:restriction base="dtyp:EnumerationConstant">
+         <xsd:enumeration value="Electric"/>
+         <xsd:enumeration value="Gas"/>
+      </xsd:restriction>
+   </xsd:simpleType>
    <xsd:simpleType name="HeatPumpCapacity">
       <xsd:annotation>
          <xsd:documentation>The cooling or heating capacity of HVAC equipment at prescribed rating conditions.  Units: Btu per h</xsd:documentation>
