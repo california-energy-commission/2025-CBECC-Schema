@@ -12680,6 +12680,167 @@ FluidSys:WtrHtr:StdbyLossFrac</dtyp:termConditions>
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
+      <xsd:element name="Section_WaterHP" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation source="FieldText">I1a WATER HEATERS - Heat Pump</xsd:documentation>
+          <xsd:appinfo source="CBECCresXML">
+            <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+          </xsd:appinfo>
+          <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="TableWaterHP">
+              <xsd:annotation>
+                <xsd:documentation source="FieldText"/>
+                <xsd:appinfo source="CBECCresXML">
+                  <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                </xsd:appinfo>
+              </xsd:annotation>
+              <xsd:complexType>
+                <xsd:sequence>
+                  <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                    <xsd:complexType>
+                      <xsd:sequence>
+                        <xsd:element name="WaterHP01_WaterHeaterName" type="hvac:WaterHeaterName">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Name</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP02_WaterHeaterCount" type="hvac:WaterHeaterCount">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText"># of Units</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP03_StorageCapacity" type="hvac:StorageCapacity">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Tank Vol. (gal)</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP04_HeatPumpWaterHeaterBrandNEEA" type="hvac:HeatPumpWaterHeaterBrandNEEA">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Heat Pump Brand</xsd:documentation>
+                            <xsd:documentation source="CalculationsAndRules">If there is no value for this field, display "n/a".</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>DHWSysRpt:MakeAndModel</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP05_HeatPumpWaterHeaterModelNEEA" type="hvac:HeatPumpWaterHeaterModelNEEA">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Heat Pump Model</xsd:documentation>
+                            <xsd:documentation source="CalculationsAndRules">If there is no value for this field, display "n/a".</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>DHWSysRpt:MakeAndModel</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP05a_HeatPumpWaterHeaterSimulationGroup" type="hvac:HeatPumpWaterHeaterSimulationGroup" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Simulated Equipment Make and Model</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="WaterHP06_TankLocation" type="hvac:TankLocation">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Tank Location</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="WaterHP07_AirSource">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Duct Inlet Air Source</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                            <xsd:simpleType>
+                              <xsd:restriction base="hvac:AirSource">
+                                <xsd:enumeration value="Outside"/>
+                              </xsd:restriction>
+                            </xsd:simpleType>
+                          </xsd:element>
+                          <xsd:element name="WaterHP07_AirSourceString" type="hvac:AirSourceString">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Duct Inlet Air Source</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="WaterHP08_AirSource">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Duct Outlet Air Source</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                            <xsd:simpleType>
+                              <xsd:restriction base="hvac:AirSource">
+                                <xsd:enumeration value="Outside"/>
+                              </xsd:restriction>
+                            </xsd:simpleType>
+                          </xsd:element>
+                          <xsd:element name="WaterHP08_AirSourceString" type="hvac:AirSourceString">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Duct Outlet Air Source</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="WaterHP09_UniformEnergyFactor" type="hvac:UniformEnergyFactor">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">UEF</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="WaterHP09_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">UEF</xsd:documentation>
+                              <xsd:appinfo source="CBECCresXML">
+                                <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                              </xsd:appinfo>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:element name="WaterHP10_JA13CompliantHPWH" type="comp:JA13CompliantHPWH" minOccurs="0">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">JA13 Compliant</xsd:documentation>
+                            <xsd:appinfo source="CBECCresXML">
+                              <dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                        </xsd:element>
+                      </xsd:sequence>
+                    </xsd:complexType>
+                  </xsd:element>
+                </xsd:sequence>
+              </xsd:complexType>
+            </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
       <xsd:element name="Section_WaterMF" minOccurs="0">
         <xsd:annotation>
           <xsd:documentation source="FieldText">
