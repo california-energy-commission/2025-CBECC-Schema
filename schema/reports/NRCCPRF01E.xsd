@@ -15884,6 +15884,22 @@ End If</xsd:documentation>
                         <xsd:documentation source="FieldText">Systems To Be Field Verified</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
+                  <xsd:element name="Nrca36_RequireNRCAMch24A" type="comp:RequireNRCAMch23A"  minOccurs="0">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">Form/Title</xsd:documentation>
+                        <xsd:documentation source="AdditionalRequirements">NRCA-MCH-24-A Must be submitted for Cooling Tower Conductivity Controls</xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Nrca36_SystemFieldVerified" type="comp:SystemFieldVerified"  minOccurs="0" maxOccurs="unbounded">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">Systems To Be Field Verified</xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
+                  <xsd:element name="Nrca36_SystemsToFieldVerify" type="comp:SystemsToFieldVerify"  minOccurs="0">
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">Systems To Be Field Verified</xsd:documentation>
+                     </xsd:annotation>
+                  </xsd:element>
 		  <xsd:element name="NrcaEndNote1" minOccurs="0">
 		     <xsd:annotation>
 			<xsd:documentation source="FieldText"/>
