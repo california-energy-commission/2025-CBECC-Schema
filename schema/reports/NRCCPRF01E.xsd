@@ -11727,7 +11727,7 @@ FluidSys:WtrHtr:StdbyLossFrac</dtyp:termConditions>
          </xsd:element>
 	 <xsd:element name="Section_WaterHP" minOccurs="0">
 		<xsd:annotation>
-			<xsd:documentation source="FieldText">I1a WATER HEATERS - Heat Pump</xsd:documentation>
+			<xsd:documentation source="FieldText">I1a WATER HEATERS - HEAT PUMP</xsd:documentation>
 			<xsd:appinfo source="CBECCresXML">
 				<dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
 			</xsd:appinfo>
@@ -15908,7 +15908,8 @@ End If</xsd:documentation>
 		  </xsd:element>
                   <xsd:element name="TableCountCAMch" minOccurs="0">
                      <xsd:annotation>
-                        <xsd:documentation source="FieldText">Count of Systems Requiring NRCA-MCH</xsd:documentation>
+                        <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+			<xsd:documentation source="AdditionalRequirements">Count of Systems Requiring NRCA-MCH</xsd:documentation>
                      </xsd:annotation>
                      <xsd:complexType>
                         <xsd:sequence>
