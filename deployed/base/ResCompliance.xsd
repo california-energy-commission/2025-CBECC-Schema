@@ -3521,7 +3521,7 @@
       <xsd:documentation>This defines whether the compliance report is a certificate of compliance, an installation certificate or a verification certificate</xsd:documentation>
       <xsd:appinfo source="displayterm">
         <dtyp:displayterm value="CERTIFICATE OF COMPLIANCE">CERTIFICATE OF COMPLIANCE</dtyp:displayterm>
-        <dtyp:displayterm value="CERTIFICATE OF COMPLIANCE -  LOWRISE MULTIFAMILY MIXED USE PERFORMANCE COMPLIANCE METHOD">CERTIFICATE OF COMPLIANCE -  LOWRISE MULTIFAMILY MIXED USE PERFORMANCE COMPLIANCE METHOD</dtyp:displayterm>
+        <dtyp:displayterm value="CERTIFICATE OF COMPLIANCE -  LOWRISE MULTIFAMILY MIXED USE PERFORMANCE COMPLIANCE METHOD">CERTIFICATE OF COMPLIANCE -  LOWRISE MULTIFAMILY PERFORMANCE COMPLIANCE METHOD</dtyp:displayterm>
         <dtyp:displayterm value="CERTIFICATE OF COMPLIANCE -  RESIDENTIAL PERFORMANCE COMPLIANCE METHOD">CERTIFICATE OF COMPLIANCE -  RESIDENTIAL PERFORMANCE COMPLIANCE METHOD</dtyp:displayterm>
         <dtyp:displayterm value="CERTIFICATE OF INSTALLATION">CERTIFICATE OF INSTALLATION</dtyp:displayterm>
         <dtyp:displayterm value="CERTIFICATE OF VERIFICATION">CERTIFICATE OF VERIFICATION</dtyp:displayterm>

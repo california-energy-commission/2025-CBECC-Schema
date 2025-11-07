@@ -12486,7 +12486,7 @@ FluidSys:WtrHtr:StdbyLossFrac</dtyp:termConditions>
          </xsd:element>
 	 <xsd:element name="Section_WaterHP" minOccurs="0">
 		<xsd:annotation>
-			<xsd:documentation source="FieldText">I1a WATER HEATERS - HEAT PUMP</xsd:documentation>
+			<xsd:documentation source="FieldText">I1a. WATER HEATERS - HEAT PUMP</xsd:documentation>
 			<xsd:appinfo source="CBECCresXML">
 				<dtyp:CBECCresXMLterm>:</dtyp:CBECCresXMLterm>
 			</xsd:appinfo>
