@@ -16134,7 +16134,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci01a_RequireLMCIEnvE" type="comp:RequireLMCIEnvE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-ENV-E - Envelope (for all buildings)</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-ENV-E - Envelope Component Approach</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci01_RequiredNRCIEnv01E IsPresent and == true 
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16163,7 +16163,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci02a_RequireLMCIMchE" type="comp:RequireLMCIMchE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-MCH-E - For all buildings with Mechanical Systems</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-MCH-E - Mechanical Systems</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci02_RequiredNRCIMch01E IsPresent and == true 
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16198,7 +16198,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci03a_RequireLMCIPlbE" type="comp:RequireLMCIPlbE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-PLB-E - For all buildings with Plumbing Systems</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-PLB-E Domestic Water Heating Systems</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci03_RequiredNRCIPlb01E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16234,7 +16234,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci08a_RequireLMCISabE" type="comp:RequireLMCISabE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-SAB-E - Solar Water Heating, PV and Battery Storage Systems</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-SAB-E - Solar and Battery</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci08_RequiredNRCISth01E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16267,7 +16267,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci09a_RequireLMCILtiE" type="comp:RequireLMCILtiE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-LTI-E - Indoor Lighting (for all buildings)</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-LTI-E - Indoor Lighting</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci09_RequiredNRCILti01E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16336,7 +16336,7 @@ End If</xsd:documentation>
             <xsd:element name="Lmci14a_RequireLMCIPrcE" type="comp:RequireLMCIPrcE" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCI-PRC-E - Covered Processes</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCI-PRC-E Process System</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrci14_RequiredNRCIPrc01E IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
