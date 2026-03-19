@@ -12991,6 +12991,18 @@ Else result is one or more ResDHWSys:ResWtrHtr:Name</dtyp:termConditions>
                           </xsd:element>
                         </xsd:choice>
                         <xsd:choice maxOccurs="1">
+                          <xsd:element name="WaterMF09a_DoesCalPlumbCodeAppendixMApply" type="comp:DoesCalPlumbCodeAppendixMApply">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Pipe Sizing as per CPC Appx. M.</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="WaterMF09a_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Pipe Sizing as per CPC Appx. M.</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
                           <xsd:element name="WaterMF10_PipeInsulationVerificationRequired" type="comp:PipeInsulationVerificationRequired">
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
@@ -13002,6 +13014,20 @@ Else result is one or more ResDHWSys:ResWtrHtr:Name</dtyp:termConditions>
                             <xsd:annotation>
                               <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
                               <xsd:documentation source="AdditionalRequirements">Pipe Insulation Verification Required</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="WaterMF10a_VerifyCentralHotWaterDistInsulation" type="comp:VerifyCentralHotWaterDistInsulation">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                              <xsd:documentation source="AdditionalRequirements">Verified Pipe Insulation Required</xsd:documentation>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="WaterMF10a_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                              <xsd:documentation source="AdditionalRequirements">Verified Pipe Insulation Required</xsd:documentation>
                             </xsd:annotation>
                           </xsd:element>
                         </xsd:choice>
@@ -13529,6 +13555,21 @@ End If</dtyp:termConditions>
                               <dtyp:CBECCnrXMLterm>ResDHWSys:RecircPumpPwrUnits</dtyp:CBECCnrXMLterm>
                             </xsd:appinfo>
                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="RecircLp07_WaterHeatingMasterMixValveType">
+                          <xsd:annotation>
+                            <xsd:documentation source="FieldText">Master Mixing Valve</xsd:documentation>
+                            <xsd:appinfo source="CBECCnrXML">
+                              <dtyp:CBECCnrXMLterm/>
+                            </xsd:appinfo>
+                          </xsd:annotation>
+                          <xsd:simpleType>
+                            <xsd:restriction base="hvac:WaterHeatingMasterMixValveType">
+                              <xsd:enumeration value="Digital"/>
+                              <xsd:enumeration value="Mechanical"/>
+                              <xsd:enumeration value="NoMasterMixValve"/>
+                            </xsd:restriction>
+                          </xsd:simpleType>
                         </xsd:element>
                       </xsd:sequence>
                     </xsd:complexType>
@@ -16755,7 +16796,7 @@ End If</xsd:documentation>
             <xsd:element name="Nrca15_RequireNRCAMch04H" type="comp:RequireNRCAMch04H" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04(a)-H - Air Distribution Duct Leakage - ECC Verification required</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04-H - Air Distribution Duct Leakage - ECC Verification required</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrca15_RequiredNRCAMch04H IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -16777,7 +16818,7 @@ End If</xsd:documentation>
             <xsd:element name="Nrca16_RequireNRCAMch04A" type="comp:RequireNRCAMch04A" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04(b)-A - Air Distribution Duct Leakage - ATT only</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">NRCA-MCH-04-A - Air Distribution Duct Leakage - ATT only</xsd:documentation>
                 <xsd:documentation source="CalculationsAndRules">If Nrca16_RequiredNRCAMch04A IsPresent and == true
 Display the AdditionalRequirements text for this element
 Else there is no display for this element
@@ -17548,7 +17589,7 @@ Lighting controls and mechanical NRCAs must be completed through an Acceptance T
             <xsd:element name="Lmca15_RequireLMCAMch04H" type="comp:RequireLMCAMch04H" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCA-MCH-04(a)-H - Air Distribution Duct Leakage - ECC Verification required</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCA-MCH-04-H - Air Distribution Duct Leakage - ECC Verification required</xsd:documentation>
               </xsd:annotation>
             </xsd:element>
             <xsd:element name="Lmca15_SystemFieldVerified" type="comp:SystemFieldVerified" minOccurs="0" maxOccurs="unbounded">
@@ -17564,7 +17605,7 @@ Lighting controls and mechanical NRCAs must be completed through an Acceptance T
             <xsd:element name="Lmca16_RequireLMCAMch04A" type="comp:RequireLMCAMch04A" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
-                <xsd:documentation source="AdditionalRequirements">LMCA-MCH-04(b)-A - Air Distribution Duct Leakage - ATT only</xsd:documentation>
+                <xsd:documentation source="AdditionalRequirements">LMCA-MCH-04-A - Air Distribution Duct Leakage - ATT only</xsd:documentation>
               </xsd:annotation>
             </xsd:element>
             <xsd:element name="Lmca16_SystemFieldVerified" type="comp:SystemFieldVerified" minOccurs="0" maxOccurs="unbounded">

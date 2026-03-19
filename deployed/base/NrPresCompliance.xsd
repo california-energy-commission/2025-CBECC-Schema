@@ -3682,6 +3682,15 @@
     <xsd:restriction base="xsd:boolean">
       </xsd:restriction>
   </xsd:simpleType>
+  <xsd:simpleType name="DoesCalPlumbCodeAppendixMApply">
+    <xsd:annotation>
+      <xsd:appinfo source="displayterm">
+        <dtyp:displayterm value="true">Yes</dtyp:displayterm>
+        <dtyp:displayterm value="false">No</dtyp:displayterm>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:boolean"/>
+  </xsd:simpleType>
   <xsd:simpleType name="DoesCF3R_Pass">
     <xsd:annotation>
       <xsd:appinfo source="displayterm">
@@ -4073,6 +4082,7 @@
         <dtyp:displayterm value="RecirculationDemandControlPushButton">Recirculation, Demand Control Push Button</dtyp:displayterm>
         <dtyp:displayterm value="ShowerDrainWaterHeatRecovery">Drain water heat recovery system</dtyp:displayterm>
         <dtyp:displayterm value="ShowerDrainWaterHeatRecoveryMF">Multifamily: Drain water heat recovery system</dtyp:displayterm>
+        <dtyp:displayterm value="VerifiedPipeInsulation">Verified Pipe Insulation for Central Systems (RA3.6.3)</dtyp:displayterm>
       </xsd:appinfo>
     </xsd:annotation>
     <xsd:restriction base="dtyp:EnumerationConstant">
@@ -4087,6 +4097,7 @@
       <xsd:enumeration value="RecirculationDemandControlPushButton"/>
       <xsd:enumeration value="ShowerDrainWaterHeatRecovery"/>
       <xsd:enumeration value="ShowerDrainWaterHeatRecoveryMF"/>
+      <xsd:enumeration value="VerifiedPipeInsulation"/>
     </xsd:restriction>
   </xsd:simpleType>
   <xsd:simpleType name="DomesticHotWaterFeatureHERS_Data">
@@ -6023,7 +6034,7 @@
         <dtyp:displayterm value="Excpt5ReducedPVReq">Project is claiming Exception 5 to Section 140.10(a). Multitenant buildings in areas where a load-serving entity does not provide either a virtual net metering (VNEM) or community solar program.</dtyp:displayterm>
         <dtyp:displayterm value="ExcptSARAResReducedPVReq">Required minimum PV capacity limited by SARA.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt1ResReducedPVReq">Project is claiming Exception 1 to Section 170.2(f): For steep slope roofs, SARA shall not consider roof areas with a northerly azimuth that lies between 300 degrees and 90 degrees from true north. No PV system is required if the SARA is less than 80 contiguous square feet.</dtyp:displayterm>
-        <dtyp:displayterm value="Excpt2ResReducedPVReq">Project is claiming Exception 2 to Section 170.2(f): No PV system is required when the minimum PV system size specified by Section 170.2(f) is less than 1.8 kWdc.</dtyp:displayterm>
+        <dtyp:displayterm value="Excpt2ResReducedPVReq">Project is claiming Exception 2 to Section 170.2(f): No PV system is required when the minimum PV system size specified by Section 170.2(f) is less than 4 kWdc.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt3ResReducedPVReq">Project is claiming Exception 3 to Section 170.2(f): Buildings with excessive snow load.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt4ResReducedPVReq">Project is claiming Exception 4 to Section 170.2(f): For buildings that are approved prior to January 1, 2020: Steep slope roof shading and disallowed PVs by local planning department.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt1ReducedBattReq">Project is claiming Exception 1 to Section 140.10(b): No battery storage system is required if the installed PV system size is less than 15 percent of the size determined by Equation 140.10-A.</dtyp:displayterm>
@@ -10357,6 +10368,7 @@
         <dtyp:displayterm value="DeclaredEmergencyArea">Declared emergency area before 1/1/20</dtyp:displayterm>
         <dtyp:displayterm value="LimitedSolarAccess">No PV - SARA less than 80 contiguous sq ft </dtyp:displayterm>
         <dtyp:displayterm value="LT1_8kWdcRequired">No PV - required PV less than 1.8kWdc</dtyp:displayterm>
+        <dtyp:displayterm value="LT4kWdcRequired">No PV - required PV less than 4kWdc</dtyp:displayterm>
         <dtyp:displayterm value="NoExceptionsNA">NA</dtyp:displayterm>
         <dtyp:displayterm value="PlansBefore2020">Plan approved before 1/1/20</dtyp:displayterm>
         <dtyp:displayterm value="Section10_109k">Section 10-109(k) determination</dtyp:displayterm>
@@ -10369,6 +10381,7 @@
       <xsd:enumeration value="DeclaredEmergencyArea"/>
       <xsd:enumeration value="LimitedSolarAccess"/>
       <xsd:enumeration value="LT1_8kWdcRequired"/>
+      <xsd:enumeration value="LT4kWdcRequired"/>
       <xsd:enumeration value="NoExceptionsNA"/>
       <xsd:enumeration value="PlansBefore2020"/>
       <xsd:enumeration value="Section10_109k"/>
@@ -14140,6 +14153,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
         <dtyp:displayterm value="ExecOrderN29_25">Solar Electric Generation Systems / Solar PV System requirements for newly constructed residential buildings are suspended per Executive Order N-29-25</dtyp:displayterm>
         <dtyp:displayterm value="ExposedSlabFloor">Exposed slab floor in conditioned zone</dtyp:displayterm>
         <dtyp:displayterm value="ExteriorWindowShades">Exterior window shades</dtyp:displayterm>
+        <dtyp:displayterm value="FenestrationProductException">Building located in Fire Hazard Severity Zones or Wildland-Urban Interface (WUI) Fire Areas which meets exception to Section 150.(q) Fenestration products.</dtyp:displayterm>
         <dtyp:displayterm value="FixedCFICoolVent">Has Fixed Central Fan Ventilation Cooling Systems (CFVCS)</dtyp:displayterm>
         <dtyp:displayterm value="HeatedSlab">Heated slab</dtyp:displayterm>
         <dtyp:displayterm value="HeatPumpWaterHeaterNEEA">NEEA rated heat pump water heater or equivalent must be installed</dtyp:displayterm>
@@ -14150,6 +14164,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
         <dtyp:displayterm value="InsulationAboveRoofDeck">Insulation above roof deck</dtyp:displayterm>
         <dtyp:displayterm value="InsulationBelowRoofDeck">Insulation below roof deck</dtyp:displayterm>
         <dtyp:displayterm value="InsulationCeiling">Ceiling has high level of insulation</dtyp:displayterm>
+        <dtyp:displayterm value="MasterMixValveCentralDHW">Domestic hot water central system: Master Mixing Valve</dtyp:displayterm>
         <dtyp:displayterm value="MetalFramedAssembly">Metal-framed assembly</dtyp:displayterm>
         <dtyp:displayterm value="NoCoolingSystem">No cooling system included</dtyp:displayterm>
         <dtyp:displayterm value="NoLoopsOrRecircPumpMF">Multifamily: No loops or recirculating pump</dtyp:displayterm>
@@ -14219,6 +14234,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
       <xsd:enumeration value="ExecOrderN29_25"/>
       <xsd:enumeration value="ExposedSlabFloor"/>
       <xsd:enumeration value="ExteriorWindowShades"/>
+      <xsd:enumeration value="FenestrationProductException"/>
       <xsd:enumeration value="FixedCFICoolVent"/>
       <xsd:enumeration value="HeatedSlab"/>
       <xsd:enumeration value="HeatPumpWaterHeaterNEEA"/>
@@ -14229,6 +14245,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
       <xsd:enumeration value="InsulationAboveRoofDeck"/>
       <xsd:enumeration value="InsulationBelowRoofDeck"/>
       <xsd:enumeration value="InsulationCeiling"/>
+      <xsd:enumeration value="MasterMixValveCentralDHW"/>
       <xsd:enumeration value="MetalFramedAssembly"/>
       <xsd:enumeration value="NoCoolingSystem"/>
       <xsd:enumeration value="NoLoopsOrRecircPumpMF"/>
@@ -15930,6 +15947,15 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
     </xsd:annotation>
     <xsd:restriction base="xsd:boolean">
       </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="VerifyCentralHotWaterDistInsulation">
+    <xsd:annotation>
+      <xsd:appinfo source="displayterm">
+        <dtyp:displayterm value="true">Yes</dtyp:displayterm>
+        <dtyp:displayterm value="false">No</dtyp:displayterm>
+      </xsd:appinfo>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:boolean"/>
   </xsd:simpleType>
   <xsd:simpleType name="VerifyIndoorFanNonContinousVCHP">
     <xsd:annotation>
