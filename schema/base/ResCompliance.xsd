@@ -19059,7 +19059,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
 	    <dtyp:displayterm value="ExecOrderN29_25">Solar Electric Generation Systems / Solar PV System requirements for newly constructed residential buildings are suspended per Executive Order N-29-25</dtyp:displayterm>
             <dtyp:displayterm value="ExposedSlabFloor">Exposed slab floor in conditioned zone</dtyp:displayterm>
             <dtyp:displayterm value="ExteriorWindowShades">Exterior window shades</dtyp:displayterm>
-	    <dtyp:displayterm value="FenestrationProductException">Building located in Fire Hazard Severity Zones or Wildland-Urban Interface (WUI) Fire Areas which meets exception to Section 150.(q) Fenestration products.</dtyp:displayterm>
+	    <dtyp:displayterm value="FenestrationProductException">Building located in Fire Hazard Severity Zones or Wildland-Urban Interface Fire Area and claiming Exception 3 to Section 150.(q).</dtyp:displayterm>
             <dtyp:displayterm value="HeatedSlab">Heated slab</dtyp:displayterm>
             <dtyp:displayterm value="HeatPumpWaterHeaterNEEA">NEEA rated heat pump water heater or equivalent must be installed</dtyp:displayterm>
             <dtyp:displayterm value="IAQVentilationFanEfficacy">IAQ Ventilation System: low W/CFM</dtyp:displayterm>
@@ -19077,6 +19077,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
             <dtyp:displayterm value="NonstandardRoofReflect">Non-standard roof reflectance</dtyp:displayterm>
             <dtyp:displayterm value="NoSpecialFeatures">NO SPECIAL FEATURES REQUIRED</dtyp:displayterm>
             <dtyp:displayterm value="PipeInsulationAllLines">Pipe insulation, all lines</dtyp:displayterm>
+            <dtyp:displayterm value="PipeSizingPerCPCAppM">Domestic hot water central system piping sized in accordance with the California Plumbing Code Appendix M.</dtyp:displayterm>
             <dtyp:displayterm value="PointOfUseDHW">Point of use</dtyp:displayterm>
             <dtyp:displayterm value="PrecoolingCreditTaken">Precooling Credit Taken</dtyp:displayterm>
             <dtyp:displayterm value="PV2kWSystem">PV System: 2.0 kW</dtyp:displayterm>
@@ -19156,6 +19157,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
          <xsd:enumeration value="NonstandardRoofReflect"/>
          <xsd:enumeration value="NoSpecialFeatures"/>
          <xsd:enumeration value="PipeInsulationAllLines"/>
+         <xsd:enumeration value="PipeSizingPerCPCAppM"/>
          <xsd:enumeration value="PointOfUseDHW"/>
          <xsd:enumeration value="PrecoolingCreditTaken"/>
          <xsd:enumeration value="PV2kWSystem"/>
