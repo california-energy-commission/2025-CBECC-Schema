@@ -8226,6 +8226,7 @@
         <dtyp:displayterm value="FanPressureDropCredit">Review and verify the fan pressure drop credits taken for HVAC systems included in the project.</dtyp:displayterm>
         <dtyp:displayterm value="FixedSeatingUsedForCalculatingVentilation">This project includes spaces that use an expected number of occupants or fixed seating criteria for calculating ventilation. Review space uses and verify that the applicable spaces meet the qualifications of Exception 1 to Section 120.1(c)3.</dtyp:displayterm>
         <dtyp:displayterm value="HvacMinEfficiencyCheck">The proposed building includes HVAC components that do not meet the mandatory efficiency requirements.</dtyp:displayterm>
+        <dtyp:displayterm value="JA18Guideline36LibraryVer">Verify that the project uses the JA18 Guideline 36 Library Version requirements as per Section 140.4(r). If applicable, a separate NRCC-MCH-E form must be completed.  Refer to [https://www.energy.ca.gov/media/11605] to verify approved libraries by CEC.</dtyp:displayterm>
         <dtyp:displayterm value="IlluminanceSetpointBelowRange">Verify that the spaces with design illuminance setpoint below the range specified in the ACM Appendix 5.4 have acceptable interior lighting levels.</dtyp:displayterm>
         <dtyp:displayterm value="LightingCreditPAF">The proposed building claims credit for non-mandatory lighting control credits via Power Adjustment Factors (PAFs) as outlined in Standards Table 140.6-A.  Review NRCC-PRF-LTI DETAILS Table A to ensure that credit is not claimed for mandatory controls.</dtyp:displayterm>
         <dtyp:displayterm value="LightingExceptionalMethod">The general lighting exceptional method is employed for one or more spaces.  Verify that the lighting allowances match the lighting installed on the plans and serve the areas within each space as identified in the compliance model.</dtyp:displayterm>
@@ -8277,6 +8278,7 @@
       <xsd:enumeration value="FanPressureDropCredit"/>
       <xsd:enumeration value="FixedSeatingUsedForCalculatingVentilation"/>
       <xsd:enumeration value="HvacMinEfficiencyCheck"/>
+      <xsd:enumeration value="JA18Guideline36LibraryVer"/>
       <xsd:enumeration value="IlluminanceSetpointBelowRange"/>
       <xsd:enumeration value="LightingCreditPAF"/>
       <xsd:enumeration value="LightingExceptionalMethod"/>
