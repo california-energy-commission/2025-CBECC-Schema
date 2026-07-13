@@ -424,225 +424,393 @@
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
-               <xsd:sequence>
-                  <xsd:element name="C22Result1_PerformanceComplianceResult" type="comp:PerformanceComplianceResult" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:appinfo source="displayterm">
-                           <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]*[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]*[/d:sup]</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]*[/d:sup]</dtyp:displayterm>
-                        </xsd:appinfo>                        
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1_PerformanceComplianceValidity" type="comp:PerformanceComplianceValidity" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
-                        <xsd:appinfo source="displayterm">
-                           <dtyp:displayterm value="PerfComplies">COMPLIES</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfFails">DOES NOT COMPLY</dtyp:displayterm>
-                           <dtyp:displayterm value="PerfInvalid">INVALID ANALYSIS</dtyp:displayterm>
-                        </xsd:appinfo>                        
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Col1to2Heading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Long-term System Cost (LSC)[d:sup]1[/d:sup]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Col3Heading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Source Energy Use</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Col1Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Efficiency[d:sup]2[/d:sup] ($/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Col2Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Total[d:sup]3[/d:sup] ($/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Col3Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Total[d:sup]3[/d:sup] (kBtu/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Row1Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Row2Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Row3Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">[d:b]Compliance Margins[/d:b]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1Row4Subheading" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">[d:b]TOTAL COMPLIANCE[/d:b]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1_StandardDesignEfficiency" type="comp:StandardDesignEfficiency" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-		  <xsd:choice maxOccurs="1">
-                     <xsd:element name="C22Result1_StandardDesignTotal" type="comp:StandardDesignTotal" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1a_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-		  <xsd:choice maxOccurs="1">
-                     <xsd:element name="C22Result1_StandardDesignSource" type="comp:StandardDesignSource" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1b_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>		  
-                  <xsd:element name="C22Result1_ProposedDesignEfficiency" type="comp:ProposedDesignEfficiency" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-		  <xsd:choice maxOccurs="1">
-                     <xsd:element name="C22Result1_ProposedDesignTotal" type="comp:ProposedDesignTotal" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1c_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-		  <xsd:choice maxOccurs="1">
-                     <xsd:element name="C22Result1_ProposedDesignSource" type="comp:ProposedDesignSource" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1d_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-                  <xsd:element name="C22Result1_ComplianceMarginEfficiency" type="comp:ComplianceMarginEfficiency" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
-                     </xsd:annotation>
-		  </xsd:element> 
-		  <xsd:choice maxOccurs="1">                 
-                     <xsd:element name="C22Result1_ComplianceMarginTotal" type="comp:ComplianceMarginTotal" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1e_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-		  <xsd:choice maxOccurs="1"> 
-                     <xsd:element name="C22Result1_ComplianceMarginSource" type="comp:ComplianceMarginSource" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1f_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-                  <xsd:element name="C22Result1_PassFailEfficiency" type="comp:PassFailEfficiency" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-		  <xsd:choice maxOccurs="1"> 
-                     <xsd:element name="C22Result1_PassFailTotal" type="comp:PassFailTotal" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1g_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-		  <xsd:choice maxOccurs="1"> 
-                     <xsd:element name="C22Result1_PassFailSource" type="comp:PassFailSource" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1h_NotApplicableMessage" type="comp:NotApplicableMessage" >
-                        <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-                        </xsd:annotation>
-		     </xsd:element> 
-		  </xsd:choice>
-                  <xsd:element name="C22Result1EndNote1" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]1[/d:sup] Long-term System Cost (LSC) is a 30-year present value cost to California's energy system. LSC is not a predicted utility bill.[/d:i]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result1EndNote2" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]2[/d:sup] Efficiency measures include energy efficiency improvements such as better building envelope and more efficient mechanical equipment[/d:i]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-		  <xsd:choice>
-                     <xsd:element name="C22Result1EndNote3a" minOccurs="0">
-                       <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-			<xsd:documentation source="CalculationsAndRules">If all instances of Feat01_SpecialFeatureCategory != ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
-                           <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Compliance Totals include efficiency, photovoltaics and batteries[/d:i]</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-                     <xsd:element name="C22Result1EndNote3b" minOccurs="0">
-                       <xsd:annotation>
-                           <xsd:documentation source="FieldText"></xsd:documentation>
-			<xsd:documentation source="CalculationsAndRules">If at least one instance of Feat01_SpecialFeatureCategory == ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
-                           <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Compliance Totals include efficiency and no photovoltaics and batteries[/d:i]</xsd:documentation>
-                        </xsd:annotation>
-                     </xsd:element>
-		  </xsd:choice>
-                  <xsd:element name="C22Result1EndNote" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]*[/d:sup] New Construction: Building complies when Proposed Design is equal to or less than Standard Design in all compliance categories and unmet load hour limits are not exceeded. 
+              <xsd:sequence>
+                <xsd:element name="C22Result1_PerformanceComplianceResult" type="comp:PerformanceComplianceResult" >
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText"></xsd:documentation>
+                      <xsd:appinfo source="displayterm">
+                         <dtyp:displayterm value="PerfComplies">COMPLIES[d:sup]*[/d:sup]</dtyp:displayterm>
+                         <dtyp:displayterm value="PerfFails">DOES NOT COMPLY [d:sup]*[/d:sup]</dtyp:displayterm>
+                         <dtyp:displayterm value="PerfFailsUMLH">DOES NOT COMPLY - EXCESSIVE UMLH[d:sup]*[/d:sup]</dtyp:displayterm>
+                      </xsd:appinfo>                        
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1_PerformanceComplianceValidity" type="comp:PerformanceComplianceValidity" >
+                   <xsd:annotation>
+                     <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
+                     <xsd:appinfo source="displayterm">
+                         <dtyp:displayterm value="PerfComplies">COMPLIES</dtyp:displayterm>
+                         <dtyp:displayterm value="PerfFails">DOES NOT COMPLY</dtyp:displayterm>
+                         <dtyp:displayterm value="PerfInvalid">INVALID ANALYSIS</dtyp:displayterm>
+                      </xsd:appinfo>                        
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1Col1to2Heading" minOccurs="0">
+                   <xsd:annotation>
+                     <xsd:documentation source="FieldText">Long-term System Cost (LSC)[d:sup]1[/d:sup]</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1Col3Heading" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText">Source Energy Use</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1Col1Subheading" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText">Efficiency[d:sup]2[/d:sup] ($/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1Col2Subheading" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText">Total[d:sup]3[/d:sup] ($/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1Col3Subheading" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText">Total[d:sup]3[/d:sup] (kBtu/ft[d:sup]2[/d:sup]-yr)</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+                <xsd:choice>
+                  <xsd:element name="C22Result1_SingleOrientation">
+		     <xsd:complexType>	
+                       <xsd:sequence>
+                        <xsd:element name="C22Result1Row1Subheading" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="C22Result1Row2Subheading" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="C22Result1Row3Subheading" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">[d:b]Compliance Margins[/d:b]</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="C22Result1Row4Subheading" minOccurs="0">
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">[d:b]TOTAL COMPLIANCE[/d:b]</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element name="C22Result1_StandardDesignEfficiency" type="comp:StandardDesignEfficiency" >
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+		        <xsd:choice maxOccurs="1">
+                           <xsd:element name="C22Result1_StandardDesignTotal" type="comp:StandardDesignTotal" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1a_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+		        <xsd:choice maxOccurs="1">
+                           <xsd:element name="C22Result1_StandardDesignSource" type="comp:StandardDesignSource" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1b_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>		  
+                        <xsd:element name="C22Result1_ProposedDesignEfficiency" type="comp:ProposedDesignEfficiency" >
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+		        <xsd:choice maxOccurs="1">
+                           <xsd:element name="C22Result1_ProposedDesignTotal" type="comp:ProposedDesignTotal" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1c_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+		        <xsd:choice maxOccurs="1">
+                           <xsd:element name="C22Result1_ProposedDesignSource" type="comp:ProposedDesignSource" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1d_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+                        <xsd:element name="C22Result1_ComplianceMarginEfficiency" type="comp:ComplianceMarginEfficiency" >
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+                           </xsd:annotation>
+		        </xsd:element> 
+		        <xsd:choice maxOccurs="1">                 
+                           <xsd:element name="C22Result1_ComplianceMarginTotal" type="comp:ComplianceMarginTotal" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1e_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+		        <xsd:choice maxOccurs="1"> 
+                           <xsd:element name="C22Result1_ComplianceMarginSource" type="comp:ComplianceMarginSource" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1f_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                             <xsd:annotation>
+                                 <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+                             </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+                        <xsd:element name="C22Result1_PassFailEfficiency" type="comp:PassFailEfficiency" >
+                           <xsd:annotation>
+                              <xsd:documentation source="FieldText"></xsd:documentation>
+                           </xsd:annotation>
+                        </xsd:element>
+		        <xsd:choice maxOccurs="1"> 
+                           <xsd:element name="C22Result1_PassFailTotal" type="comp:PassFailTotal" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText"></xsd:documentation>
+                           </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1g_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText"></xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+		        <xsd:choice maxOccurs="1"> 
+                           <xsd:element name="C22Result1_PassFailSource" type="comp:PassFailSource" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText"></xsd:documentation>
+                              </xsd:annotation>
+                           </xsd:element>
+                           <xsd:element name="C22Result1h_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                              <xsd:annotation>
+                                 <xsd:documentation source="FieldText"></xsd:documentation>
+                              </xsd:annotation>
+		           </xsd:element> 
+		        </xsd:choice>
+                     </xsd:sequence>
+		    </xsd:complexType>
+	         </xsd:element>
+	         <xsd:element name="C22Result1_MultipleOrientations">
+		    <xsd:complexType>					
+		       <xsd:sequence>
+	                <xsd:element name="C22Result1_StandardDesign" minOccurs="4" maxOccurs="4">
+		           <xsd:complexType>
+		              <xsd:sequence>
+                                 <xsd:element name="C22Result1_StandardDesignEfficiency" type="comp:StandardDesignEfficiency" >
+                                    <xsd:annotation>
+                                      <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                                   </xsd:annotation>
+                                </xsd:element>
+		                <xsd:choice maxOccurs="1">
+                                   <xsd:element name="C22Result1_StandardDesignTotal" type="comp:StandardDesignTotal" >
+                                      <xsd:annotation>
+                                         <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                                      </xsd:annotation>
+                                  </xsd:element>
+                                  <xsd:element name="C22Result1a_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                     <xsd:annotation>
+                                        <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                                     </xsd:annotation>
+		                  </xsd:element> 
+		              </xsd:choice>
+		              <xsd:choice maxOccurs="1">
+                                 <xsd:element name="C22Result1_StandardDesignSource" type="comp:StandardDesignSource" >
+                                    <xsd:annotation>
+                                       <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                                    </xsd:annotation>
+                                 </xsd:element>
+                                 <xsd:element name="C22Result1b_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                    <xsd:annotation>
+                                       <xsd:documentation source="FieldText">Standard Design</xsd:documentation>
+                                    </xsd:annotation>
+		                 </xsd:element> 
+		              </xsd:choice>
+		            </xsd:sequence>
+			    <xsd:attribute name="StandardAttribute1" type="com:CardinalOrientation" use="optional"/>
+		           </xsd:complexType>
+                        </xsd:element>
+	                <xsd:element name="C22Result1_ProposedDesign" minOccurs="4" maxOccurs="4">
+		           <xsd:complexType>
+		              <xsd:sequence>
+		                 <xsd:element name="C22Result1_01Row2Label" minOccurs="0">
+			           <xsd:annotation>
+			              <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+			          </xsd:annotation>
+		                </xsd:element>
+                                <xsd:element name="C22Result1_ProposedDesignEfficiency" type="comp:ProposedDesignEfficiency">
+			   	   <xsd:annotation>
+				      <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+					</xsd:annotation>
+				</xsd:element>
+				<xsd:choice maxOccurs="1">
+				   <xsd:element name="C22Result1_ProposedDesignTotal" type="comp:ProposedDesignTotal">
+				      <xsd:annotation>
+					<xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
+				      </xsd:annotation>
+				   </xsd:element>
+				   <xsd:element name="C22Result1c_NotApplicableMessage" type="comp:NotApplicableMessage">
+				      <xsd:annotation>
+				         <xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+				      </xsd:annotation>
+			          </xsd:element>
+			       </xsd:choice>
+			       <xsd:choice maxOccurs="1">
+				  <xsd:element name="C22Result1_ProposedDesignSource" type="comp:ProposedDesignSource">
+				     <xsd:annotation>
+					<xsd:documentation source="FieldText">Proposed  Design</xsd:documentation>
+				     </xsd:annotation>
+				  </xsd:element>
+				  <xsd:element name="C22Result1d_NotApplicableMessage" type="comp:NotApplicableMessage">
+				     <xsd:annotation>
+					<xsd:documentation source="FieldText">Proposed Design</xsd:documentation>
+				     </xsd:annotation>
+				  </xsd:element>
+			      </xsd:choice>
+		            </xsd:sequence>
+                            <xsd:attribute name="ProposedAttribute1" type="com:CardinalOrientation" use="optional"/>
+		         </xsd:complexType>
+	                </xsd:element>
+	                <xsd:element name="C22Result1_ComplianceMargin" minOccurs="4" maxOccurs="4">
+		           <xsd:complexType>
+		              <xsd:sequence>
+		                 <xsd:element name="C22Result1_01Row2Label" minOccurs="0">
+			           <xsd:annotation>
+			              <xsd:documentation source="FieldText">ComplianceMargin</xsd:documentation>
+			          </xsd:annotation>
+		                </xsd:element>
+                                <xsd:element name="C22Result1_ComplianceMarginEfficiency" type="comp:ComplianceMarginEfficiency">
+				   <xsd:annotation>
+				      <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+			   	   </xsd:annotation>
+				</xsd:element>
+			        <xsd:choice maxOccurs="1">
+				   <xsd:element name="C22Result1_ComplianceMarginTotal" type="comp:ComplianceMarginTotal">
+				      <xsd:annotation>
+				         <xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+				      </xsd:annotation>
+				   </xsd:element>
+				   <xsd:element name="C22Result1e_NotApplicableMessage" type="comp:NotApplicableMessage">
+				      <xsd:annotation>
+					<xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+				      </xsd:annotation>
+				   </xsd:element>
+				</xsd:choice>
+				<xsd:choice maxOccurs="1">
+				   <xsd:element name="C22Result1_ComplianceMarginSource" type="comp:ComplianceMarginSource">
+				      <xsd:annotation>
+					<xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+				      </xsd:annotation>
+				   </xsd:element>
+				   <xsd:element name="C22Result1f_NotApplicableMessage" type="comp:NotApplicableMessage">
+				      <xsd:annotation>
+					<xsd:documentation source="FieldText">Compliance Margin</xsd:documentation>
+				      </xsd:annotation>
+				   </xsd:element>
+				</xsd:choice>
+		            </xsd:sequence>
+                            <xsd:attribute name="ComplianceAttribute1" type="com:CardinalOrientation" use="optional"/>
+		         </xsd:complexType>
+	                </xsd:element>
+	                <xsd:element name="C22Result1_ResultsByOrientation" minOccurs="4" maxOccurs="4">
+	                  <xsd:complexType>
+		           <xsd:sequence>
+                             <xsd:element name="C22Result1_PassFailEfficiency" type="comp:PassFailEfficiency" >
+                                <xsd:annotation>
+                                     <xsd:documentation source="FieldText"></xsd:documentation>
+                                   </xsd:annotation>
+                                </xsd:element>
+		             <xsd:choice maxOccurs="1"> 
+                                <xsd:element name="C22Result1_PassFailTotal" type="comp:PassFailTotal" >
+                                   <xsd:annotation>
+                                       <xsd:documentation source="FieldText"></xsd:documentation>
+                                   </xsd:annotation>
+                                </xsd:element>
+                                <xsd:element name="C22Result1g_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                   <xsd:annotation>
+                                       <xsd:documentation source="FieldText"></xsd:documentation>
+                                    </xsd:annotation>
+		                 </xsd:element> 
+		              </xsd:choice>
+		              <xsd:choice maxOccurs="1"> 
+                                 <xsd:element name="C22Result1_PassFailSource" type="comp:PassFailSource" >
+                                     <xsd:annotation>
+                                        <xsd:documentation source="FieldText"></xsd:documentation>
+                                     </xsd:annotation>
+                                  </xsd:element>
+                                   <xsd:element name="C22Result1h_NotApplicableMessage" type="comp:NotApplicableMessage" >
+                                      <xsd:annotation>
+                                         <xsd:documentation source="FieldText"></xsd:documentation>
+                                       </xsd:annotation>
+		                    </xsd:element> 
+		                 </xsd:choice>
+		              </xsd:sequence>
+                              <xsd:attribute name="ResultAttribute1" type="com:CardinalOrientation" use="optional"/>
+		           </xsd:complexType>
+	                </xsd:element>
+                     </xsd:sequence>
+		   </xsd:complexType>
+	        </xsd:element>
+              </xsd:choice>
+              <xsd:element name="C22Result1EndNote1" minOccurs="0">
+                 <xsd:annotation>
+                    <xsd:documentation source="FieldText"></xsd:documentation>
+                    <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]1[/d:sup] Long-term System Cost (LSC) is a 30-year present value cost to California's energy system. LSC is not a predicted utility bill.[/d:i]</xsd:documentation>
+                 </xsd:annotation>
+              </xsd:element>
+              <xsd:element name="C22Result1EndNote2" minOccurs="0">
+                 <xsd:annotation>
+                    <xsd:documentation source="FieldText"></xsd:documentation>
+                    <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]2[/d:sup] Efficiency measures include energy efficiency improvements such as better building envelope and more efficient mechanical equipment[/d:i]</xsd:documentation>
+                 </xsd:annotation>
+              </xsd:element>
+	      <xsd:choice>
+                 <xsd:element name="C22Result1EndNote3a" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText"></xsd:documentation>
+	              <xsd:documentation source="CalculationsAndRules">If all instances of Feat01_SpecialFeatureCategory != ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
+                      <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Compliance Totals include efficiency, photovoltaics and batteries[/d:i]</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element name="C22Result1EndNote3b" minOccurs="0">
+                   <xsd:annotation>
+                      <xsd:documentation source="FieldText"></xsd:documentation>
+		      <xsd:documentation source="CalculationsAndRules">If at least one instance of Feat01_SpecialFeatureCategory == ExecOrderN29_25, display this version of footnote 3 </xsd:documentation>
+                      <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]3[/d:sup] Compliance Totals include efficiency and no photovoltaics and batteries[/d:i]</xsd:documentation>
+                   </xsd:annotation>
+                </xsd:element>
+		</xsd:choice>
+                <xsd:element name="C22Result1EndNote" minOccurs="0">
+                  <xsd:annotation>
+                     <xsd:documentation source="FieldText"></xsd:documentation>
+                     <xsd:documentation source="AdditionalRequirements">[d:i][d:sup]*[/d:sup] New Construction: Building complies when Proposed Design is equal to or less than Standard Design in all compliance categories and unmet load hour limits are not exceeded. 
 [d:line1/] Complete Addition Scope and Existing, Addition and Alteration Scope: Building complies when efficiency compliance margin is greater than or equal to zero and unmet load hour limits are not exceeded. [/d:i]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-               </xsd:sequence>
-            </xsd:complexType>
+                 </xsd:annotation>
+               </xsd:element>
+             </xsd:sequence>
+           </xsd:complexType>
          </xsd:element>
          <xsd:element name="Section_C22Result2" minOccurs="1">
             <xsd:annotation>
@@ -4445,7 +4613,7 @@
                <xsd:documentation source="FieldText">[d:b]C8. ENERGY USE INTENSITY (EUI) [/d:b]</xsd:documentation>
                <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
             </xsd:annotation>
-            <xsd:complexType>
+            <xsd:complexType>            
                <xsd:sequence>
                   <xsd:element name="C22Result8Col1Heading" minOccurs="0">
                      <xsd:annotation>
@@ -4467,70 +4635,149 @@
                         <xsd:documentation source="FieldText">Margin Percentage</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="C22Result8GEui" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">GROSS EUI[d:sup]1[/d:sup]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8GEui1_StandardDesignGrossEUI" type="comp:StandardDesignGrossEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal1_EnergySumStandard + C22Result7PV1_EnergySumStandard) x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8GEui2_ProposedDesignGrossEUI" type="comp:ProposedDesignGrossEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal2_EnergySumProposed + C22Result7PV2_EnergySumProposedPhotovoltaic) x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8GEui3_MarginGrossEUI" type="comp:MarginGrossEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8GEui4_MarginPctGrossEUI" type="comp:MarginPctGrossEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result =( (C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI) / C22Result8GEui1_StandardDesignGrossEUI ) x 100</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8NEui" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">NET EUI[d:sup]1[/d:sup]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8NEui1_StandardDesignNetEUI" type="comp:StandardDesignNetEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal1_EnergySumStandard  x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8NEui2_ProposedDesignNetEUI" type="comp:ProposedDesignNetEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal2_EnergySumProposed x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8NEui3_MarginNetEUI" type="comp:MarginNetEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8NEui4_MarginPctNetEUI" type="comp:MarginPctNetEUI" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                        <xsd:documentation source="CalculationsAndRules">result = ((C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI) / C22Result8NEui1_StandardDesignNetEUI) x 100</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-                  <xsd:element name="C22Result8Footnote1" minOccurs="0">
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText">[d:i][d:sup]1[/d:sup] Notes: Gross EUI is Energy Use Total (not including PV)/Total Building Area. Net EUI is Energy Use Total (including PV)/Total Building Area.[/d:i]</xsd:documentation>
-                     </xsd:annotation>
-                  </xsd:element>
-               </xsd:sequence>
+	          <xsd:choice>
+		    <xsd:element name="SingleOrientationEUI">
+		     <xsd:annotation>
+			<xsd:documentation source="FieldText"/>								
+		     </xsd:annotation>
+		  <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="C22Result8GEui" minOccurs="0">
+                         <xsd:annotation>
+                            <xsd:documentation source="FieldText">GROSS EUI[d:sup]1[/d:sup]</xsd:documentation>
+                         </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="C22Result8GEui1_StandardDesignGrossEUI" type="comp:StandardDesignGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal1_EnergySumStandard + C22Result7PV1_EnergySumStandard) x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui2_ProposedDesignGrossEUI" type="comp:ProposedDesignGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal2_EnergySumProposed + C22Result7PV2_EnergySumProposedPhotovoltaic) x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui3_MarginGrossEUI" type="comp:MarginGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui4_MarginPctGrossEUI" type="comp:MarginPctGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result =( (C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI) / C22Result8GEui1_StandardDesignGrossEUI ) x 100</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui" minOccurs="0">
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText">NET EUI[d:sup]1[/d:sup]</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui1_StandardDesignNetEUI" type="comp:StandardDesignNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal1_EnergySumStandard  x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui2_ProposedDesignNetEUI" type="comp:ProposedDesignNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal2_EnergySumProposed x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui3_MarginNetEUI" type="comp:MarginNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui4_MarginPctNetEUI" type="comp:MarginPctNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI) / C22Result8NEui1_StandardDesignNetEUI) x 100</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                  </xsd:sequence>
+                 </xsd:complexType>
+                </xsd:element>
+		<xsd:element name="MultipleOrientationEUI" minOccurs="4" maxOccurs="4">
+		   <xsd:annotation>
+	             <xsd:documentation source="FieldText"/>								
+		   </xsd:annotation>
+		   <xsd:complexType>
+                    <xsd:sequence>
+                      <xsd:element name="C22Result8GEui" minOccurs="0">
+                         <xsd:annotation>
+                            <xsd:documentation source="FieldText">GROSS EUI[d:sup]1[/d:sup]</xsd:documentation>
+                         </xsd:annotation>
+                      </xsd:element>
+                      <xsd:element name="C22Result8GEui1_StandardDesignGrossEUI" type="comp:StandardDesignGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal1_EnergySumStandard + C22Result7PV1_EnergySumStandard) x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui2_ProposedDesignGrossEUI" type="comp:ProposedDesignGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = (((C22Result7EnergyUseTotal2_EnergySumProposed + C22Result7PV2_EnergySumProposedPhotovoltaic) x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui3_MarginGrossEUI" type="comp:MarginGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8GEui4_MarginPctGrossEUI" type="comp:MarginPctGrossEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result =( (C22Result8GEui1_StandardDesignGrossEUI - C22Result8GEui2_ProposedDesignGrossEUI) / C22Result8GEui1_StandardDesignGrossEUI ) x 100</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui" minOccurs="0">
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText">NET EUI[d:sup]1[/d:sup]</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui1_StandardDesignNetEUI" type="comp:StandardDesignNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal1_EnergySumStandard  x 3412) + (C22Result7EnergyUseTotal4_EnergySumStandardMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui2_ProposedDesignNetEUI" type="comp:ProposedDesignNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result7EnergyUseTotal2_EnergySumProposed x 3412) + (C22Result7EnergyUseTotal5_EnergySumProposedMBtu  x 1000)) / Total Building Area)</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui3_MarginNetEUI" type="comp:MarginNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                     <xsd:element name="C22Result8NEui4_MarginPctNetEUI" type="comp:MarginPctNetEUI" >
+                        <xsd:annotation>
+                           <xsd:documentation source="FieldText"></xsd:documentation>
+                           <xsd:documentation source="CalculationsAndRules">result = ((C22Result8NEui1_StandardDesignNetEUI - C22Result8NEui2_ProposedDesignNetEUI) / C22Result8NEui1_StandardDesignNetEUI) x 100</xsd:documentation>
+                        </xsd:annotation>
+                     </xsd:element>
+                    </xsd:sequence>
+		    <xsd:attribute name="EuiAttribute1" type="com:CardinalDirection" use="optional"/>
+                  </xsd:complexType>
+                 </xsd:element>
+	       </xsd:choice>
+               <xsd:element name="C22Result8Footnote1" minOccurs="0">
+                 <xsd:annotation>
+                  <xsd:documentation source="FieldText">[d:i][d:sup]1[/d:sup] Notes: Gross EUI is Energy Use Total (not including PV)/Total Building Area. Net EUI is Energy Use Total (including PV)/Total Building Area.[/d:i]</xsd:documentation>
+                 </xsd:annotation>
+               </xsd:element>
+              </xsd:sequence>
             </xsd:complexType>
          </xsd:element>
          <xsd:element name="Section_C22Result9" minOccurs="0">
@@ -4545,48 +4792,101 @@ If p:Proj:Bldg:ThrmlZn:BypassHtgUMLHLimit = 0 AND p:Proj:Bldg:ThrmlZn:HtgUnmetLd
                <xsd:documentation source="MinOccurs">If this section doesn't apply, do not display anything for this section</xsd:documentation>
             </xsd:annotation>
             <xsd:complexType>
-               <xsd:sequence>
-                  <xsd:element name="TableUMLHC22" >
-                     <xsd:annotation>
-                        <xsd:documentation source="FieldText"></xsd:documentation>
-                     </xsd:annotation>
-                     <xsd:complexType>
-                        <xsd:sequence>
-                           <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
-                              <xsd:complexType>
-                                 <xsd:sequence>
-                                    <xsd:element name="C22Result9_01_ThermalZoneName" type="hvac:ThermalZoneName" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Thermal Zone Name</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="C22Result9_02_ZoneUnmetCoolingLoadHours" type="hvac:ZoneUnmetCoolingLoadHours" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Cooling Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="C22Result9_03_UnmetCoolingLoadHours" type="hvac:UnmetCoolingLoadHours" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Proposed Cooling Unmet Load Hours</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="C22Result9_04_ZoneUnmetHeatingLoadHours" type="hvac:ZoneUnmetHeatingLoadHours" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Heating Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                    <xsd:element name="C22Result9_05_UnmetHeatingLoadHours" type="hvac:UnmetHeatingLoadHours" >
-                                       <xsd:annotation>
-                                          <xsd:documentation source="FieldText">Proposed Heating Unmet Load Hours</xsd:documentation>
-                                       </xsd:annotation>
-                                    </xsd:element>
-                                 </xsd:sequence>
-                              </xsd:complexType>
-                           </xsd:element>
-                        </xsd:sequence>
-                     </xsd:complexType>
-                  </xsd:element>
-               </xsd:sequence>
+               <xsd:choice>
+                  <xsd:element name="C22Result9_SingleOrientation">
+		     <xsd:complexType>	
+                       <xsd:sequence>
+                          <xsd:element name="TableUMLHC22" >
+                             <xsd:annotation>
+                                <xsd:documentation source="FieldText"></xsd:documentation>
+                             </xsd:annotation>
+                             <xsd:complexType>
+                                <xsd:sequence>
+                                   <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                                      <xsd:complexType>
+                                         <xsd:sequence>
+                                             <xsd:element name="C22Result9_01_ThermalZoneName" type="hvac:ThermalZoneName" >
+                                               <xsd:annotation>
+                                                  <xsd:documentation source="FieldText">Thermal Zone Name</xsd:documentation>
+                                              </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="C22Result9_02_ZoneUnmetCoolingLoadHours" type="hvac:ZoneUnmetCoolingLoadHours" >
+                                                <xsd:annotation>
+                                                   <xsd:documentation source="FieldText">Cooling Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
+                                                </xsd:annotation>
+                                           </xsd:element>
+                                          <xsd:element name="C22Result9_03_UnmetCoolingLoadHours" type="hvac:UnmetCoolingLoadHours" >
+                                             <xsd:annotation>
+                                                 <xsd:documentation source="FieldText">Proposed Cooling Unmet Load Hours</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                         <xsd:element name="C22Result9_04_ZoneUnmetHeatingLoadHours" type="hvac:ZoneUnmetHeatingLoadHours" >
+                                             <xsd:annotation>
+                                                <xsd:documentation source="FieldText">Heating Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                         <xsd:element name="C22Result9_05_UnmetHeatingLoadHours" type="hvac:UnmetHeatingLoadHours" >
+                                             <xsd:annotation>
+                                                 <xsd:documentation source="FieldText">Proposed Heating Unmet Load Hours</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                      </xsd:sequence>
+                                   </xsd:complexType>
+                                 </xsd:element>
+                              </xsd:sequence>
+                            </xsd:complexType>
+                          </xsd:element>
+                         </xsd:sequence>
+                       </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="C22Result9_MultipleOrientationUmlh" minOccurs="4" maxOccurs="4">
+		     <xsd:complexType>	
+                       <xsd:sequence>
+                          <xsd:element name="TableUMLHC22" >
+                             <xsd:annotation>
+                                <xsd:documentation source="FieldText"></xsd:documentation>
+                             </xsd:annotation>
+                             <xsd:complexType>
+                                <xsd:sequence>
+                                   <xsd:element name="Row" minOccurs="1" maxOccurs="unbounded">
+                                      <xsd:complexType>
+                                         <xsd:sequence>
+                                             <xsd:element name="C22Result9_01_ThermalZoneName" type="hvac:ThermalZoneName" >
+                                               <xsd:annotation>
+                                                  <xsd:documentation source="FieldText">Thermal Zone Name</xsd:documentation>
+                                              </xsd:annotation>
+                                            </xsd:element>
+                                            <xsd:element name="C22Result9_02_ZoneUnmetCoolingLoadHours" type="hvac:ZoneUnmetCoolingLoadHours" >
+                                                <xsd:annotation>
+                                                   <xsd:documentation source="FieldText">Cooling Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
+                                                </xsd:annotation>
+                                           </xsd:element>
+                                          <xsd:element name="C22Result9_03_UnmetCoolingLoadHours" type="hvac:UnmetCoolingLoadHours" >
+                                             <xsd:annotation>
+                                                 <xsd:documentation source="FieldText">Proposed Cooling Unmet Load Hours</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                         <xsd:element name="C22Result9_04_ZoneUnmetHeatingLoadHours" type="hvac:ZoneUnmetHeatingLoadHours" >
+                                             <xsd:annotation>
+                                                <xsd:documentation source="FieldText">Heating Unmet Load Hour Limit for Thermal Zone</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                         <xsd:element name="C22Result9_05_UnmetHeatingLoadHours" type="hvac:UnmetHeatingLoadHours" >
+                                             <xsd:annotation>
+                                                 <xsd:documentation source="FieldText">Proposed Heating Unmet Load Hours</xsd:documentation>
+                                             </xsd:annotation>
+                                         </xsd:element>
+                                      </xsd:sequence>
+                                   </xsd:complexType>
+                                 </xsd:element>
+                              </xsd:sequence>
+                           </xsd:complexType>
+                        </xsd:element>
+                       </xsd:sequence>
+                       <xsd:attribute name="UmlhAttribute1" type="com:CardinalDirection" use="optional"/>
+                      </xsd:complexType>
+                   </xsd:element>				      
+	       </xsd:choice>
             </xsd:complexType>
          </xsd:element>
          <xsd:element name="Section_Except" minOccurs="0">
