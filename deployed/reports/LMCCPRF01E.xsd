@@ -204,10 +204,10 @@
           </xsd:sequence>
         </xsd:complexType>
       </xsd:element>
-      <xsd:element name="Section_Proj" minOccurs="1">
+      <xsd:element name="Section_Proj1" minOccurs="1">
         <xsd:annotation>
           <xsd:documentation source="FieldText">
-            <d:b>B. PROJECT SUMMARY </d:b>
+            <d:b>B1. PROJECT SUMMARY - Performance </d:b>
           </xsd:documentation>
           <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
         </xsd:annotation>
@@ -216,7 +216,7 @@
             <xsd:element name="Proj_BeginNote" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>Table B shows which building components are included in the performance calculation.  If indicated as not included, the project must show compliance prescriptively if within the permit application.</d:i>
+                  <d:i>Table B1 shows which building components are included in the performance calculation.  If indicated as not included, the project must show compliance prescriptively if within the permit application.</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -329,6 +329,18 @@
                 </xsd:appinfo>
               </xsd:annotation>
             </xsd:element>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="Section_Proj2" minOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation source="FieldText">
+            <d:b>B2. PROJECT SUMMARY - Prescriptive/Mandatory </d:b>
+          </xsd:documentation>
+          <xsd:documentation source="MinOccurs">This section is required.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:complexType>
+          <xsd:sequence>
             <xsd:element name="ProjPrescSubheading" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
@@ -391,7 +403,7 @@
               <xsd:annotation>
                 <xsd:documentation source="FieldText"/>
                 <xsd:documentation source="AdditionalRequirements">
-                  <d:i>Electrical power systems, commissioning, solar ready, elevator and escalator requirements are mandatory and should be documented on the LMCC form listed if applicable (i.e. compliance will not be shown on the LMCC-PRF-E.)</d:i>
+                  <d:i>Electrical power systems, commissioning, solar ready requirements, and covered processes are mandatory and should be documented on the LMCC form listed if applicable (i.e. compliance will not be shown on the LMCC-PRF-E.)</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -428,6 +440,18 @@
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
                   <d:i>LMCC-SAB-01E is required</d:i>
+                </xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ProjMM04a" minOccurs="0">
+              <xsd:annotation>
+                <xsd:documentation source="FieldText">Covered Processes  <d:t24refnolink/>120.6</xsd:documentation>
+              </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="ProjMM04b" minOccurs="0">
+              <xsd:annotation>
+                <xsd:documentation source="FieldText">
+                  <d:i>LMCC-PRC-01E is required</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>

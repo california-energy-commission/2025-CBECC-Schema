@@ -13948,7 +13948,7 @@
    <xsd:simpleType name="PerfBattery">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -13958,7 +13958,7 @@
    <xsd:simpleType name="PerfCondLTI">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -13968,7 +13968,7 @@
    <xsd:simpleType name="PerfDHW">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -13978,7 +13978,7 @@
    <xsd:simpleType name="PerfENV">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -13988,7 +13988,7 @@
    <xsd:simpleType name="PerfKitchenPRC">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -13998,7 +13998,7 @@
    <xsd:simpleType name="PerfLabPRC">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -14008,7 +14008,7 @@
    <xsd:simpleType name="PerfMCH">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -14046,7 +14046,7 @@
    <xsd:simpleType name="PerfPV">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -14056,7 +14056,7 @@
    <xsd:simpleType name="PerfSolarWH">
       <xsd:annotation>
          <xsd:appinfo source="displayterm">
-            <dtyp:displayterm value="true">Performance</dtyp:displayterm>
+            <dtyp:displayterm value="true">Included</dtyp:displayterm>
             <dtyp:displayterm value="false">Not Included</dtyp:displayterm>
          </xsd:appinfo>
       </xsd:annotation>
@@ -19074,6 +19074,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
 	    <dtyp:displayterm value="MasterMixValveCentralDHW">Domestic hot water central system: Master Mixing Valve</dtyp:displayterm>
             <dtyp:displayterm value="MetalFramedAssembly">Metal-framed assembly</dtyp:displayterm>
             <dtyp:displayterm value="NoCoolingSystem">No cooling system included</dtyp:displayterm>
+            <dtyp:displayterm value="NoIAQVentilationFID">IAQ Ventilation System: fault indicator display not included; confirm FID is not required </dtyp:displayterm>
             <dtyp:displayterm value="NoLoopsOrRecircPumpMF">Multifamily: No loops or recirculating pump</dtyp:displayterm>
             <dtyp:displayterm value="NonstandardFloor">Floor has high level of insulation</dtyp:displayterm>
             <dtyp:displayterm value="NonstandardRoofReflect">Non-standard roof reflectance</dtyp:displayterm>
@@ -19154,6 +19155,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
 	 <xsd:enumeration value="MasterMixValveCentralDHW"/>	
          <xsd:enumeration value="MetalFramedAssembly"/>
          <xsd:enumeration value="NoCoolingSystem"/>
+         <xsd:enumeration value="NoIAQVentilationFID"/>
          <xsd:enumeration value="NoLoopsOrRecircPumpMF"/>
          <xsd:enumeration value="NonstandardFloor"/>
          <xsd:enumeration value="NonstandardRoofReflect"/>
