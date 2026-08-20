@@ -1107,7 +1107,7 @@
             <dtyp:displayterm value="EnvelopeAirLeakageHERS">Building air leakage/reduced infiltration</dtyp:displayterm>
             <dtyp:displayterm value="IAQ_MechanicalVentilationHERS">Indoor air quality ventilation</dtyp:displayterm>
             <dtyp:displayterm value="InsulationSprayFoamHighRvalueHERS">High R-value Spray Foam Insulation</dtyp:displayterm>
-            <dtyp:displayterm value="KitchenRangeHoodHERS">Kitchen range hood</dtyp:displayterm>
+            <dtyp:displayterm value="KitchenRangeHoodHERS">Kitchen Exhaust</dtyp:displayterm>
             <dtyp:displayterm value="None">-- None --</dtyp:displayterm>
             <dtyp:displayterm value="QualityInsulationInstallationHERS">Quality insulation installation (QII)</dtyp:displayterm>
             <dtyp:displayterm value="VerifiedExistingConditionsHERS">Verified Existing Conditions</dtyp:displayterm>
