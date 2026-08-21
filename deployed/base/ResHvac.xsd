@@ -873,6 +873,8 @@
     <xsd:annotation>
       <xsd:appinfo source="displayterm">
         <dtyp:displayterm value="Custom">Custom</dtyp:displayterm>
+        <dtyp:displayterm value="CustomGT20pct">Custom (less than 14%)</dtyp:displayterm>
+        <dtyp:displayterm value="CustomLT14pct">Custom (greater than 20%)</dtyp:displayterm>
         <dtyp:displayterm value="Premium">Premium (~18-20%)</dtyp:displayterm>
         <dtyp:displayterm value="Standard">Standard (14-17%)</dtyp:displayterm>
         <dtyp:displayterm value="ThinFilm">ThinFilm</dtyp:displayterm>
@@ -880,6 +882,8 @@
     </xsd:annotation>
     <xsd:restriction base="dtyp:EnumerationConstant">
       <xsd:enumeration value="Custom"/>
+      <xsd:enumeration value="CustomGT20pct"/>
+      <xsd:enumeration value="CustomLT14pct"/>
       <xsd:enumeration value="Premium"/>
       <xsd:enumeration value="Standard"/>
       <xsd:enumeration value="ThinFilm"/>

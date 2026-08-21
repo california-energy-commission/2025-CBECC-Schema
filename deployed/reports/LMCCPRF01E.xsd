@@ -363,7 +363,7 @@
             <xsd:element name="ProjNonperf01b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-LTI-01E if any enclosed unconditioned spaces have new/altered lighting</d:i>
+                  <d:i>LMCC-LTI-01-E if any enclosed unconditioned spaces have new/altered lighting</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -375,7 +375,7 @@
             <xsd:element name="ProjNonperf02b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-LTI-01E if dwelling units or guest rooms have new/altered indoor lighting</d:i>
+                  <d:i>LMCC-LTI-01-E if dwelling units or guest rooms have new/altered indoor lighting</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -387,7 +387,7 @@
             <xsd:element name="ProjNonperf03b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-LTO-01E if any new/altered outdoor lighting</d:i>
+                  <d:i>LMCC-LTO-01-E if any new/altered outdoor lighting</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -399,7 +399,7 @@
             <xsd:element name="ProjNonperf04b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-LTO-01E if dwelling units or guest rooms have new/altered outdoor lighting</d:i>
+                  <d:i>LMCC-LTO-01-E if dwelling units or guest rooms have new/altered outdoor lighting</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -411,7 +411,7 @@
             <xsd:element name="ProjNonperf05b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-LTS-01E if any new/altered illuminated signs located indoors or outdoors</d:i>
+                  <d:i>LMCC-LTS-01-E if any new/altered illuminated signs located indoors or outdoors</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -423,7 +423,7 @@
             <xsd:element name="ProjNonperf06b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-ELC-01E if any new/altered electrical power distribution components </d:i>
+                  <d:i>LMCC-ELC-01-E if any new/altered electrical power distribution components </d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -435,7 +435,7 @@
             <xsd:element name="ProjNonperf07b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-ELC-01E if gas is used in dwelling unit heating, cooktop, clothes dryer or water heating systems</d:i>
+                  <d:i>LMCC-ELC-01-E if gas is used in dwelling unit heating, cooktop, clothes dryer or water heating systems</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -447,7 +447,7 @@
             <xsd:element name="ProjNonperf08b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-CXR-01E if new building with conditioned nonresidential occupancy</d:i>
+                  <d:i>LMCC-CXR-01-E if new building with conditioned nonresidential occupancy</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -459,7 +459,7 @@
             <xsd:element name="ProjNonperf09b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-SAB-01E if new conditioned building and no photovoltaic (PV) system is installed per the Energy Code</d:i>
+                  <d:i>LMCC-SAB-01-E if new conditioned building and no photovoltaic (PV) system is installed per the Energy Code</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
@@ -471,7 +471,7 @@
             <xsd:element name="ProjNonperf10b" minOccurs="0">
               <xsd:annotation>
                 <xsd:documentation source="FieldText">
-                  <d:i>LMCC-PRC-01E if new/altered Refrigerated Warehouse, Commercial Refrigeration, Enclosed Parking Garage, Process Boiler, Compressed Air, Elevator, Escalator, Moving Walkway, Controlled Environment Horticulture, Steam Trap, Computer/Data Room, Commercial Kitchen, Laboratory or Factory Exhaust</d:i>
+                  <d:i>LMCC-PRC-01-E if new/altered Refrigerated Warehouse, Commercial Refrigeration, Enclosed Parking Garage, Process Boiler, Compressed Air, Elevator, Escalator, Moving Walkway, Controlled Environment Horticulture, Steam Trap, Computer/Data Room, Commercial Kitchen, Laboratory or Factory Exhaust</d:i>
                 </xsd:documentation>
               </xsd:annotation>
             </xsd:element>
