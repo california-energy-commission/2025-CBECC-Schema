@@ -14587,6 +14587,7 @@
          <xsd:appinfo source="displayterm">
             <dtyp:displayterm value="RheemPROPH50T0RH120">PROPH50 T0 RH120  (50 gal)</dtyp:displayterm>
             <dtyp:displayterm value="RheemXE50T10H15U0">XE50T10H15U0  (50 gal)</dtyp:displayterm>
+	    <dtyp:displayterm value="RheemXE50T10HD00U0">XE50T10HD00U0  (50 gal)</dtyp:displayterm>
             <dtyp:displayterm value="Richmond10E50HP120">10E50-HP120  (50 gal)</dtyp:displayterm>
             <dtyp:displayterm value="RuudPROUH50T0RU120">PROUH50 T0 RU120  (50 gal)</dtyp:displayterm>            
          </xsd:appinfo>
@@ -14594,6 +14595,7 @@
       <xsd:restriction base="dtyp:EnumerationConstant">
          <xsd:enumeration value="RheemPROPH50T0RH120"/>
          <xsd:enumeration value="RheemXE50T10H15U0"/>
+	 <xsd:enumeration value="RheemXE50T10HD00U0"/>
          <xsd:enumeration value="Richmond10E50HP120"/>
          <xsd:enumeration value="RuudPROUH50T0RU120"/>         
       </xsd:restriction>

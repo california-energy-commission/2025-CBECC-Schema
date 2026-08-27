@@ -116,11 +116,18 @@
                         <xsd:documentation source="FieldText">Climate Zone</xsd:documentation>
                      </xsd:annotation>
                   </xsd:element>
-                  <xsd:element name="Info09_Azimuth" type="dtyp:Azimuth" >
+		  <xsd:choice maxOccurs="1">
+                    <xsd:element name="Info09_Azimuth" type="dtyp:Azimuth" >
                      <xsd:annotation>
                         <xsd:documentation source="FieldText">Building Orientation (deg)</xsd:documentation>
                      </xsd:annotation>
-                  </xsd:element>
+                    </xsd:element>
+                    <xsd:element name="Info09_AzimuthString" type="comp:AzimuthString" >
+                     <xsd:annotation>
+                        <xsd:documentation source="FieldText">Building Orientation (deg)</xsd:documentation>
+                     </xsd:annotation>
+                    </xsd:element>
+		  </xsd:choice>
                   <xsd:element name="Info10_BuildingType">
                    <xsd:annotation>
                       <xsd:documentation source="FieldText">Building Type(s)</xsd:documentation>
