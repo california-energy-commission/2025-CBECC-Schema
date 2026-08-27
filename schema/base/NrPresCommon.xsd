@@ -2603,7 +2603,7 @@ NOTE: For roofs, differentiate between the initial Solar Reflectance value and t
             <dtyp:displayterm value="Nonresidential">Nonresidential</dtyp:displayterm>
             <dtyp:displayterm value="OtherOccupancy">Other</dtyp:displayterm>
             <dtyp:displayterm value="PermanentSchoolBuilding">Permanent Pre-checked Public School Building</dtyp:displayterm>
-            <dtyp:displayterm value="RelocableSchoolBuildingAllZones">Relocable Public School Building</dtyp:displayterm>
+            <dtyp:displayterm value="RelocableSchoolBuildingAllZones">Relocable Pre-checked Public School Building</dtyp:displayterm>
             <dtyp:displayterm value="RelocableSchoolBuilding">Relocable Pre-checked Public School Building</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialMF">Multifamily</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialNR">High-rise Res/ Hotel/ Motel</dtyp:displayterm>
