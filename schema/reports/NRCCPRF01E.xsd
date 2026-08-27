@@ -640,12 +640,20 @@
                         <xsd:element name="C22Result1_PassFailEfficiency" type="comp:PassFailEfficiency" >
                            <xsd:annotation>
                               <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                            </xsd:annotation>
                         </xsd:element>
 		        <xsd:choice maxOccurs="1"> 
                            <xsd:element name="C22Result1_PassFailTotal" type="comp:PassFailTotal" >
                               <xsd:annotation>
                                  <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                            </xsd:annotation>
                            </xsd:element>
                            <xsd:element name="C22Result1g_NotApplicableMessage" type="comp:NotApplicableMessage" >
@@ -658,6 +666,10 @@
                            <xsd:element name="C22Result1_PassFailSource" type="comp:PassFailSource" >
                               <xsd:annotation>
                                  <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                               </xsd:annotation>
                            </xsd:element>
                            <xsd:element name="C22Result1h_NotApplicableMessage" type="comp:NotApplicableMessage" >
@@ -796,12 +808,20 @@
                              <xsd:element name="C22Result1_PassFailEfficiency" type="comp:PassFailEfficiency" >
                                 <xsd:annotation>
                                      <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                                    </xsd:annotation>
                                 </xsd:element>
 		             <xsd:choice maxOccurs="1"> 
                                 <xsd:element name="C22Result1_PassFailTotal" type="comp:PassFailTotal" >
                                    <xsd:annotation>
                                        <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                                    </xsd:annotation>
                                 </xsd:element>
                                 <xsd:element name="C22Result1g_NotApplicableMessage" type="comp:NotApplicableMessage" >
@@ -814,6 +834,10 @@
                                  <xsd:element name="C22Result1_PassFailSource" type="comp:PassFailSource" >
                                      <xsd:annotation>
                                         <xsd:documentation source="FieldText"></xsd:documentation>
+         			     <xsd:appinfo source="displayterm">
+            				<dtyp:displayterm value="Pass">Pass</dtyp:displayterm>
+           				 <dtyp:displayterm value="Fail">Fail</dtyp:displayterm>
+        			     </xsd:appinfo>
                                      </xsd:annotation>
                                   </xsd:element>
                                    <xsd:element name="C22Result1h_NotApplicableMessage" type="comp:NotApplicableMessage" >
