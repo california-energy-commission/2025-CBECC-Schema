@@ -3007,7 +3007,7 @@ NOTE: For roofs, differentiate between the initial Solar Reflectance value and t
             <dtyp:displayterm value="MixedOccupancy">Mixed Occupancy</dtyp:displayterm>
             <dtyp:displayterm value="Nonresidential">Nonresidential</dtyp:displayterm>
             <dtyp:displayterm value="OtherOccupancy">Other</dtyp:displayterm>
-            <dtyp:displayterm value="RelocableSchoolBuildingAllZones">Relocable Public School Building for use in all climate zones Occupancy: E</dtyp:displayterm>
+            <dtyp:displayterm value="RelocableSchoolBuildingAllZones">Relocatable Public School Building for use in all climate zones Occupancy: E</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialMF">Multifamily</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialNR">High-rise Res/ Hotel/ Motel</dtyp:displayterm>
             <dtyp:displayterm value="StateBuilding">State Building</dtyp:displayterm>

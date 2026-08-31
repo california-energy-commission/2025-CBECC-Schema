@@ -8144,12 +8144,20 @@ result = NotApplicable</xsd:documentation>
                             </xsd:annotation>
                           </xsd:element>
                         </xsd:choice>
-                        <xsd:element name="Hvacdwell10a_HeatPumpBackupFuel" type="hvac:HeatPumpBackupFuel" minOccurs="0">
-                          <xsd:annotation>
-                            <xsd:documentation source="FieldText">Backup</xsd:documentation>
-                            <xsd:documentation source="AdditionalRequirements"/>
-                          </xsd:annotation>
-                        </xsd:element>
+                        <xsd:choice maxOccurs="1">
+                          <xsd:element name="Hvacdwell10a_HeatPumpBackupFuel" type="hvac:HeatPumpBackupFuel">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Backup</xsd:documentation>
+                              <xsd:documentation source="AdditionalRequirements"/>
+                            </xsd:annotation>
+                          </xsd:element>
+                          <xsd:element name="Hvacdwell10a_NotApplicableMessage" type="comp:NotApplicableMessage">
+                            <xsd:annotation>
+                              <xsd:documentation source="FieldText">Backup</xsd:documentation>
+                              <xsd:documentation source="AdditionalRequirements"/>
+                            </xsd:annotation>
+                          </xsd:element>
+                        </xsd:choice>
                         <xsd:element name="Hvacdwell11to13SubLabel" minOccurs="0">
                           <xsd:annotation>
                             <xsd:documentation source="FieldText">NOT REPORTED IN PDF</xsd:documentation>
