@@ -145,8 +145,8 @@
                            <xsd:enumeration value="Nonresidential"/>
                            <xsd:enumeration value="OtherOccupancy"/>
 			   <xsd:enumeration value="PermanentSchoolBuilding"/>
-			   <xsd:enumeration value="RelocableSchoolBuildingAllZones"/>
-			   <xsd:enumeration value="RelocableSchoolBuilding"/>
+			   <xsd:enumeration value="RelocatableSchoolBuildingAllZones"/>
+			   <xsd:enumeration value="RelocatableSchoolBuilding"/>
                            <xsd:enumeration value="StateBuilding"/>
                         </xsd:restriction>
                        </xsd:simpleType>

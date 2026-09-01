@@ -2603,8 +2603,8 @@ NOTE: For roofs, differentiate between the initial Solar Reflectance value and t
             <dtyp:displayterm value="Nonresidential">Nonresidential</dtyp:displayterm>
             <dtyp:displayterm value="OtherOccupancy">Other</dtyp:displayterm>
             <dtyp:displayterm value="PermanentSchoolBuilding">Permanent Pre-checked Public School Building</dtyp:displayterm>
-            <dtyp:displayterm value="RelocableSchoolBuildingAllZones">Relocatable Pre-checked Public School Building</dtyp:displayterm>
-            <dtyp:displayterm value="RelocableSchoolBuilding">Relocatable Pre-checked Public School Building</dtyp:displayterm>
+            <dtyp:displayterm value="RelocatableSchoolBuildingAllZones">Relocatable Pre-checked Public School Building</dtyp:displayterm>
+            <dtyp:displayterm value="RelocatableSchoolBuilding">Relocatable Pre-checked Public School Building</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialMF">Multifamily</dtyp:displayterm>
             <dtyp:displayterm value="ResidentialNR">High-rise Res/ Hotel/ Motel</dtyp:displayterm>
             <dtyp:displayterm value="StateBuilding">State Building</dtyp:displayterm>
@@ -2620,8 +2620,8 @@ NOTE: For roofs, differentiate between the initial Solar Reflectance value and t
          <xsd:enumeration value="Nonresidential"/>
          <xsd:enumeration value="OtherOccupancy"/>
          <xsd:enumeration value="PermanentSchoolBuilding"/>
-         <xsd:enumeration value="RelocableSchoolBuildingAllZones"/>
-         <xsd:enumeration value="RelocableSchoolBuilding"/>
+         <xsd:enumeration value="RelocatableSchoolBuildingAllZones"/>
+         <xsd:enumeration value="RelocatableSchoolBuilding"/>
          <xsd:enumeration value="ResidentialMF"/>
          <xsd:enumeration value="ResidentialNR"/>
          <xsd:enumeration value="StateBuilding"/>
