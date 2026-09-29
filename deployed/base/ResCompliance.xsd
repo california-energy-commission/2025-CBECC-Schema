@@ -8210,7 +8210,7 @@
         <dtyp:displayterm value="Excpt3ReducedPVReq">Project is claiming Exception 3 to Section 140.10(a): No PV system is required if the SARA contains less than 80 contiguous square feet.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt4ReducedPVReq">Project is claiming Exception 4 to Section 140.10(a): Buildings with excessive snow load.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt5ReducedPVReq">Project is claiming Exception 5 to Section 140.10(a). Multitenant buildings in areas where a load-serving entity does not provide either a virtual net metering (VNEM) or community solar program.</dtyp:displayterm>
-        <dtyp:displayterm value="ExcptSARAResReducedPVReq">Required minimum PV capacity limited by SARA.</dtyp:displayterm>
+        <dtyp:displayterm value="ExcptSARAResReducedPVReq">Standard design PV size limited by solar access roof area (SARA). SARA must be determined using CEC-approved solar assessment tools: https://www.energy.ca.gov/programs-and-topics/programs/building-energy-efficiency-standards/solar-assessment-tools. Provide the solar assessment report and supporting roof plan.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt1ResReducedPVReq">Project is claiming Exception 1 to Section 170.2(f): For steep slope roofs, SARA shall not consider roof areas with a northerly azimuth that lies between 300 degrees and 90 degrees from true north. No PV system is required if the SARA is less than 80 contiguous square feet.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt2ResReducedPVReq">Project is claiming Exception 2 to Section 170.2(f): No PV system is required when the minimum PV system size specified by Section 170.2(f) is less than 4 kWdc.</dtyp:displayterm>
         <dtyp:displayterm value="Excpt3ResReducedPVReq">Project is claiming Exception 3 to Section 170.2(f): Buildings with excessive snow load.</dtyp:displayterm>
@@ -19054,6 +19054,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
         <dtyp:displayterm value="CompactDesignBasic">Compact distribution system basic credit</dtyp:displayterm>
         <dtyp:displayterm value="ComplianceOptionVCHP">Variable capacity heat pump compliance option (verification details from VCHP Staff report, Appendix B, and RA3)</dtyp:displayterm>
         <dtyp:displayterm value="CoolRoofInstalled">Cool roof</dtyp:displayterm>
+        <dtyp:displayterm value="DemandResponseCompatibleHPWH">One or more heat pump water heaters have been modeled as demand response compatible</dtyp:displayterm>
         <dtyp:displayterm value="DuctHighInsulation">Ducts with high level of insulation</dtyp:displayterm>
         <dtyp:displayterm value="DuctsInCrawlSpace">Ducts in crawl space</dtyp:displayterm>
         <dtyp:displayterm value="DuctsLessThan40ft">New ductwork added is less than 40 ft. in length</dtyp:displayterm>
@@ -19135,6 +19136,7 @@ the inside surface of gable ends or other exterior vertical surfaces in attics t
       <xsd:enumeration value="CompactDesignBasic"/>
       <xsd:enumeration value="ComplianceOptionVCHP"/>
       <xsd:enumeration value="CoolRoofInstalled"/>
+      <xsd:enumeration value="DemandResponseCompatibleHPWH"/>
       <xsd:enumeration value="DuctHighInsulation"/>
       <xsd:enumeration value="DuctsInCrawlSpace"/>
       <xsd:enumeration value="DuctsLessThan40ft"/>
